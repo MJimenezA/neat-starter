@@ -1,23 +1,25 @@
----
 hero:
-  image: /static/img/placeholders/hero.svg
-  label_en: MARCH 6, 2027 · MÉRIDA, YUCATÁN
-  label_es: 6 DE MARZO, 2027 · MÉRIDA, YUCATÁN
-  title: Misael & Michelle
-  subtitle_en: Hacienda Chichí Suárez
-  subtitle_es: Hacienda Chichí Suárez
-  intro_en: Join us for a wedding weekend in Mérida
   intro_es: Acompáñanos a un fin de semana de boda en Mérida
-  primary_label_en: RSVP Now
-  primary_label_es: Confirmar Asistencia
-  primary_url: /rsvp/
-  secondary_label_en: View the Weekend
-  secondary_label_es: Ver el Fin de Semana
   secondary_url: /events/
-
+  secondary_label_es: Ver el Fin de Semana
+  subtitle_en: Hacienda Chichí Suárez
+  primary_label_en: RSVP Now
+  primary_url: /rsvp/
+  label_en: MARCH 6, 2027 · MÉRIDA, YUCATÁN
+  subtitle_es: Hacienda Chichí Suárez
+  primary_label_es: Confirmar Asistencia
+  title: Misael & Michelle
+  label_es: 6 DE MARZO, 2027 · MÉRIDA, YUCATÁN
+  image: /static/img/8fd5ad51-9e05-492f-a8b7-8014dca21990.png
+  intro_en: Join us for a wedding weekend in Mérida
+  secondary_label_en: View the Weekend
 details:
-  blurb_en: We are gathering the people we love most in the city that stole our hearts. Over one unforgettable weekend, we will celebrate among the gardens and golden stone of a centuries-old Yucatecan hacienda.
-  blurb_es: Reuniremos a las personas que más amamos en la ciudad que robó nuestros corazones. Durante un fin de semana inolvidable, celebraremos entre los jardines y la piedra dorada de una hacienda yucateca centenaria.
+  blurb_en: We are gathering the people we love most in the city that stole our
+    hearts. Over one unforgettable weekend, we will celebrate among the gardens
+    and golden stone of a centuries-old Yucatecan hacienda.
+  blurb_es: Reuniremos a las personas que más amamos en la ciudad que robó
+    nuestros corazones. Durante un fin de semana inolvidable, celebraremos entre
+    los jardines y la piedra dorada de una hacienda yucateca centenaria.
   columns:
     - icon: calendar
       title_en: Date & Time
@@ -34,32 +36,38 @@ details:
       title_es: Código de Vestimenta
       body_en: Garden Formal — TBD
       body_es: Formal de Jardín — a confirmar
-
 countdown:
   label_en: Until we say "I Do"
   label_es: Hasta que digamos "Sí, acepto"
-
 events_intro:
   heading_en: Join Us
   heading_es: Únete a Nosotros
-  blurb_en: We have three celebrations planned across the weekend — each one a chance to gather, celebrate, and enjoy Mérida together.
-  blurb_es: Tenemos tres celebraciones planeadas durante el fin de semana — cada una, una oportunidad para reunirnos, celebrar y disfrutar Mérida juntos.
-
+  blurb_en: We have three celebrations planned across the weekend — each one a
+    chance to gather, celebrate, and enjoy Mérida together.
+  blurb_es: Tenemos tres celebraciones planeadas durante el fin de semana — cada
+    una, una oportunidad para reunirnos, celebrar y disfrutar Mérida juntos.
 travel_teaser:
   image: /static/img/placeholders/travel.svg
   heading_en: Getting Here
   heading_es: Cómo Llegar
-  blurb_en: Mérida is easily accessible from major U.S. cities with direct or one-stop flights. We recommend arriving a day or two early to soak in everything this magical city has to offer.
-  blurb_es: Mérida es de fácil acceso desde las principales ciudades de EE. UU. con vuelos directos o con una escala. Recomendamos llegar uno o dos días antes para disfrutar de todo lo que esta ciudad mágica tiene para ofrecer.
+  blurb_en: Mérida is easily accessible from major U.S. cities with direct or
+    one-stop flights. We recommend arriving a day or two early to soak in
+    everything this magical city has to offer.
+  blurb_es: Mérida es de fácil acceso desde las principales ciudades de EE. UU.
+    con vuelos directos o con una escala. Recomendamos llegar uno o dos días
+    antes para disfrutar de todo lo que esta ciudad mágica tiene para ofrecer.
   button_en: Travel Details
   button_es: Detalles de Viaje
   url: /travel/
-
 stay_teaser:
   heading_en: Where to Stay
   heading_es: Dónde Hospedarse
-  blurb_en: We've arranged room blocks at select hotels near the venue and in the heart of Mérida. From boutique haciendas to stylish Airbnbs, there's something for every style.
-  blurb_es: Hemos reservado bloques de habitaciones en hoteles selectos cerca del lugar y en el corazón de Mérida. Desde haciendas boutique hasta Airbnbs con estilo, hay algo para cada gusto.
+  blurb_en: We've arranged room blocks at select hotels near the venue and in the
+    heart of Mérida. From boutique haciendas to stylish Airbnbs, there's
+    something for every style.
+  blurb_es: Hemos reservado bloques de habitaciones en hoteles selectos cerca del
+    lugar y en el corazón de Mérida. Desde haciendas boutique hasta Airbnbs con
+    estilo, hay algo para cada gusto.
   button_en: View Accommodations
   button_es: Ver Hospedaje
   url: /travel/#stay
@@ -67,13 +75,16 @@ stay_teaser:
     - /static/img/placeholders/hotel-courtyard.svg
     - /static/img/placeholders/casa-santian.svg
     - /static/img/placeholders/mansion-xodo.svg
-
 explore_teaser:
   image: /static/img/placeholders/explore.svg
   heading_en: Discover Mérida
   heading_es: Explora Mérida
-  blurb_en: The White City is full of wonder — cenotes, Mayan ruins, colorful markets, incredible food, and some of the warmest people in Mexico. Make it a trip to remember.
-  blurb_es: La Ciudad Blanca está llena de maravillas — cenotes, ruinas mayas, mercados coloridos, comida increíble y algunas de las personas más cálidas de México. Que sea un viaje para recordar.
+  blurb_en: The White City is full of wonder — cenotes, Mayan ruins, colorful
+    markets, incredible food, and some of the warmest people in Mexico. Make it
+    a trip to remember.
+  blurb_es: La Ciudad Blanca está llena de maravillas — cenotes, ruinas mayas,
+    mercados coloridos, comida increíble y algunas de las personas más cálidas
+    de México. Que sea un viaje para recordar.
   button_en: Explore the City
   button_es: Explora la Ciudad
   url: /explore/
