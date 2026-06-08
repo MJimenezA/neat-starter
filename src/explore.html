@@ -1,0 +1,97 @@
+---
+layout: default
+title: Explore Mérida
+description: "Things to do and see in Mérida — sights, cenotes, day trips, Yucatecan food and drink, and practical tips for guests."
+---
+{% import "partials/i18n.html" as ui %}
+
+<!-- Page header -->
+<header class="relative text-ivory">
+  <img src="{{ explore.header.image }}" alt="" class="absolute inset-0 w-full h-full object-cover" />
+  <div class="absolute inset-0 bg-forest/60"></div>
+  <div class="relative container mx-auto pt-36 pb-20 lg:pt-44 lg:pb-28 text-center">
+    <p class="reveal eyebrow text-blush">{{ ui.t("The White City", "La Ciudad Blanca") }}</p>
+    <h1 class="reveal reveal-delay-1 display text-5xl sm:text-7xl mt-3 text-ivory">{{ ui.t(explore.header.title_en, explore.header.title_es) }}</h1>
+    <p class="reveal reveal-delay-2 mt-5 max-w-2xl mx-auto text-ivory/85">{{ ui.t(explore.header.subtitle_en, explore.header.subtitle_es) }}</p>
+  </div>
+</header>
+
+<!-- Must-see sights -->
+<section class="bg-ivory">
+  <div class="container mx-auto py-20 lg:py-24">
+    <div class="reveal max-w-2xl">
+      <p class="eyebrow">01 · {{ ui.t("Sights", "Lugares") }}</p>
+      <h2 class="text-4xl sm:text-5xl mt-2 text-forest">{{ ui.t(explore.sights.heading_en, explore.sights.heading_es) }}</h2>
+    </div>
+    <div class="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      {% for s in explore.sights.list %}
+      <article class="reveal card overflow-hidden">
+        <img src="{{ s.image }}" alt="" class="h-44 w-full object-cover" />
+        <div class="p-6">
+          <h3 class="text-xl leading-tight">{{ ui.t(s.name_en, s.name_es) }}</h3>
+          <p class="mt-2 text-sm text-ink/75">{{ ui.t(s.desc_en, s.desc_es) }}</p>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- Day trips -->
+<section class="bg-sage/50">
+  <div class="container mx-auto py-20 lg:py-24">
+    <div class="reveal max-w-2xl">
+      <p class="eyebrow">02 · {{ ui.t("Nature", "Naturaleza") }}</p>
+      <h2 class="text-4xl sm:text-5xl mt-2 text-forest">{{ ui.t(explore.daytrips.heading_en, explore.daytrips.heading_es) }}</h2>
+    </div>
+    <div class="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      {% for d in explore.daytrips.list %}
+      <article class="reveal card bg-ivory overflow-hidden">
+        <img src="{{ d.image }}" alt="" class="h-44 w-full object-cover" />
+        <div class="p-6">
+          <h3 class="text-xl leading-tight">{{ ui.t(d.name_en, d.name_es) }}</h3>
+          <p class="mt-2 text-sm text-ink/75">{{ ui.t(d.desc_en, d.desc_es) }}</p>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- Food & drink -->
+<section class="bg-ivory">
+  <div class="container mx-auto py-20 lg:py-24 grid lg:grid-cols-2 gap-12 items-start">
+    <div class="reveal lg:sticky lg:top-28">
+      <p class="eyebrow">03 · {{ ui.t("Flavor", "Sabor") }}</p>
+      <h2 class="text-4xl sm:text-5xl mt-2 text-forest">{{ ui.t(explore.food.heading_en, explore.food.heading_es) }}</h2>
+      <p class="mt-4 font-serif italic text-xl text-ink/80 max-w-md">{{ ui.t(explore.food.intro_en, explore.food.intro_es) }}</p>
+      <img src="{{ explore.food.image }}" alt="" class="mt-8 rounded-4xl shadow-card w-full h-64 object-cover" />
+    </div>
+    <div class="space-y-6">
+      {% for b in explore.food.blocks %}
+      <div class="reveal reveal-delay-{{ loop.index }} card p-7 border-l-4 border-tangerine">
+        <h3 class="text-2xl">{{ ui.t(b.title_en, b.title_es) }}</h3>
+        <p class="mt-2 text-ink/75">{{ ui.t(b.body_en, b.body_es) }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- Practical tips -->
+<section class="bg-cream">
+  <div class="container mx-auto py-20 lg:py-24">
+    <div class="reveal text-center max-w-2xl mx-auto">
+      <div class="rule-monogram mb-6"><span>&amp;</span></div>
+      <h2 class="text-4xl sm:text-5xl text-forest">{{ ui.t(explore.tips.heading_en, explore.tips.heading_es) }}</h2>
+    </div>
+    <div class="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {% for t in explore.tips.list %}
+      <div class="reveal card p-7">
+        <h3 class="text-xl text-tangerine">{{ ui.t(t.title_en, t.title_es) }}</h3>
+        <p class="mt-2 text-sm text-ink/75">{{ ui.t(t.body_en, t.body_es) }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

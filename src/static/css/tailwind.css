@@ -1,20 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Jost:wght@300;400;500;600&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/*Your Custom CSS Goes here*/
+/* ---------------------------------------------------------------
+   Misael & Michelle — botanical Yucatecan wedding
+   --------------------------------------------------------------- */
 
-h1 {
-  @apply text-4xl tracking-tighter mb-3 text-center lg:text-7xl;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-ivory text-ink font-sans antialiased;
+    font-weight: 400;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-serif text-forest;
+    font-weight: 500;
+  }
+
+  /* Bilingual visibility — driven by [data-lang] on <html> */
+  [data-lang="en"] [data-es] {
+    display: none !important;
+  }
+  [data-lang="es"] [data-en] {
+    display: none !important;
+  }
 }
 
-h3 {
-  @apply text-2xl font-bold mb-3;
+@layer components {
+  .container-narrow {
+    @apply mx-auto w-full max-w-5xl px-6;
+  }
+
+  .eyebrow {
+    @apply font-sans uppercase tracking-widest2 text-xs text-tangerine;
+    font-weight: 500;
+  }
+
+  .display {
+    @apply font-serif leading-[0.95] tracking-tight;
+  }
+
+  /* Buttons --------------------------------------------------- */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-8 py-3 font-sans text-sm tracking-wide transition-all duration-300;
+    font-weight: 500;
+  }
+  .btn-primary {
+    @apply btn bg-tangerine text-ivory shadow-soft hover:bg-terracotta hover:-translate-y-0.5;
+  }
+  .btn-outline {
+    @apply btn border border-forest/30 text-forest hover:bg-forest hover:text-ivory;
+  }
+  .btn-light {
+    @apply btn bg-ivory/95 text-forest hover:bg-ivory hover:-translate-y-0.5;
+  }
+  .btn-ghost {
+    @apply btn border border-ivory/70 text-ivory hover:bg-ivory hover:text-forest;
+  }
+  .btn-sm {
+    @apply px-6 py-2.5 text-xs;
+  }
+
+  /* Cards ----------------------------------------------------- */
+  .card {
+    @apply rounded-4xl bg-cream shadow-card transition-transform duration-500 hover:-translate-y-1;
+  }
+
+  /* Monogram divider ------------------------------------------ */
+  .rule-monogram {
+    @apply flex items-center justify-center gap-5 text-tangerine;
+  }
+  .rule-monogram::before,
+  .rule-monogram::after {
+    content: "";
+    @apply h-px w-16 bg-tangerine/40 sm:w-28;
+  }
+  .rule-monogram span {
+    @apply font-serif text-2xl italic;
+  }
+
+  /* Inputs ---------------------------------------------------- */
+  .field-label {
+    @apply mb-1.5 block font-sans text-xs uppercase tracking-widest text-forest/70;
+  }
+  .field {
+    @apply w-full rounded-2xl border border-forest/15 bg-ivory px-4 py-3 font-sans text-sm text-ink placeholder-ink/40 outline-none transition focus:border-tangerine focus:ring-2 focus:ring-tangerine/30;
+  }
 }
 
-/* Syntax Highlighting*/
+@layer utilities {
+  /* Scroll reveal */
+  .reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+      transform 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: opacity, transform;
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+  .reveal-delay-1 {
+    transition-delay: 0.12s;
+  }
+  .reveal-delay-2 {
+    transition-delay: 0.24s;
+  }
+  .reveal-delay-3 {
+    transition-delay: 0.36s;
+  }
 
-body :not(pre) > code[class*="language-"],
-body pre[class*="language-"] {
-  @apply bg-gray-800;
+  /* Slow drift for decorative botanicals */
+  @keyframes drift {
+    0%,
+    100% {
+      transform: translateY(0) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-14px) rotate(2deg);
+    }
+  }
+  .animate-drift {
+    animation: drift 9s ease-in-out infinite;
+  }
+
+  @keyframes bounce-soft {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(8px);
+    }
+  }
+  .animate-bounce-soft {
+    animation: bounce-soft 2.4s ease-in-out infinite;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .animate-drift,
+  .animate-bounce-soft {
+    animation: none;
+  }
 }

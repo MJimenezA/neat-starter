@@ -1,0 +1,121 @@
+---
+layout: default
+title: Travel & Stay
+description: "How to get to Mérida, where to stay, recommended neighborhoods, hotel room blocks, Airbnbs, and travel tips for the wedding weekend."
+---
+{% import "partials/i18n.html" as ui %}
+
+<!-- Page header -->
+<header class="relative text-ivory">
+  <img src="{{ travel.header.image }}" alt="" class="absolute inset-0 w-full h-full object-cover" />
+  <div class="absolute inset-0 bg-forest/60"></div>
+  <div class="relative container mx-auto pt-36 pb-20 lg:pt-44 lg:pb-28 text-center">
+    <p class="reveal eyebrow text-blush">{{ ui.t("Plan Your Trip", "Planea tu Viaje") }}</p>
+    <h1 class="reveal reveal-delay-1 display text-5xl sm:text-7xl mt-3 text-ivory">{{ ui.t(travel.header.title_en, travel.header.title_es) }}</h1>
+    <p class="reveal reveal-delay-2 mt-5 max-w-xl mx-auto text-ivory/85">{{ ui.t(travel.header.subtitle_en, travel.header.subtitle_es) }}</p>
+  </div>
+</header>
+
+<!-- Getting here + When to arrive -->
+<section class="bg-ivory">
+  <div class="container mx-auto py-20 lg:py-24 grid lg:grid-cols-2 gap-12">
+    <div class="reveal">
+      <div class="flex items-center gap-3 text-tangerine">{{ ui.icon("plane","w-8 h-8") }}<h2 class="text-3xl sm:text-4xl text-forest">{{ ui.t(travel.getting_here.heading_en, travel.getting_here.heading_es) }}</h2></div>
+      <ul class="mt-6 space-y-3">
+        {% for p in travel.getting_here.points %}
+        <li class="flex gap-3 text-ink/80"><span class="mt-2 h-1.5 w-1.5 rounded-full bg-tangerine shrink-0"></span><span>{{ ui.t(p.en, p.es) }}</span></li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div class="reveal reveal-delay-1 card bg-sage/40 p-8 lg:p-10 self-start">
+      <h2 class="text-3xl text-forest">{{ ui.t(travel.when_to_arrive.heading_en, travel.when_to_arrive.heading_es) }}</h2>
+      <p class="mt-4 text-ink/80 leading-relaxed">{{ ui.t(travel.when_to_arrive.body_en, travel.when_to_arrive.body_es) }}</p>
+    </div>
+  </div>
+</section>
+
+<!-- Recommended areas -->
+<section class="bg-cream">
+  <div class="container mx-auto py-20 lg:py-24">
+    <div class="reveal text-center max-w-2xl mx-auto">
+      <div class="rule-monogram mb-6"><span>&amp;</span></div>
+      <h2 class="text-4xl sm:text-5xl">{{ ui.t(travel.areas.heading_en, travel.areas.heading_es) }}</h2>
+    </div>
+    <div class="mt-12 grid gap-8 md:grid-cols-3">
+      {% for a in travel.areas.list %}
+      <article class="reveal reveal-delay-{{ loop.index }} card overflow-hidden">
+        <img src="{{ a.image }}" alt="" class="h-48 w-full object-cover" />
+        <div class="p-7">
+          <h3 class="text-2xl">{{ ui.t(a.name_en, a.name_es) }}</h3>
+          <p class="mt-1 inline-flex items-center gap-1.5 text-xs uppercase tracking-widest text-tangerine">{{ ui.icon("pin","w-3.5 h-3.5") }} {{ ui.t(a.distance_en, a.distance_es) }}</p>
+          <p class="mt-3 text-sm text-ink/75">{{ ui.t(a.desc_en, a.desc_es) }}</p>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- Hotels (room blocks) -->
+<section id="stay" class="bg-ivory scroll-mt-24">
+  <div class="container mx-auto py-20 lg:py-24">
+    <div class="reveal max-w-2xl">
+      <div class="flex items-center gap-3 text-tangerine">{{ ui.icon("bed","w-8 h-8") }}<h2 class="text-4xl sm:text-5xl text-forest">{{ ui.t(travel.hotels.heading_en, travel.hotels.heading_es) }}</h2></div>
+      <p class="mt-4 text-ink/75">{{ ui.t(travel.hotels.intro_en, travel.hotels.intro_es) }}</p>
+    </div>
+    <div class="mt-12 grid gap-8 md:grid-cols-2">
+      {% for h in travel.hotels.list %}
+      <article class="reveal reveal-delay-{{ loop.index }} card overflow-hidden flex flex-col sm:flex-row">
+        <img src="{{ h.image }}" alt="" class="h-48 sm:h-auto sm:w-44 object-cover shrink-0" />
+        <div class="p-7 flex flex-col">
+          <p class="eyebrow">{{ ui.t(h.area_en, h.area_es) }}</p>
+          <h3 class="text-2xl mt-1">{{ ui.t(h.name_en, h.name_es) }}</h3>
+          <p class="mt-3 text-sm text-ink/75">{{ ui.t(h.notes_en, h.notes_es) }}</p>
+          <p class="mt-2 text-xs text-ink/60">{{ ui.t(h.amenities_en, h.amenities_es) }}</p>
+          <a href="{{ h.url }}" class="btn-outline btn-sm mt-5 self-start">{{ ui.t(h.button_en, h.button_es) }} {{ ui.icon("arrow","w-4 h-4") }}</a>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- Boutique & Airbnb -->
+<section class="bg-blush/40">
+  <div class="container mx-auto py-20 lg:py-24">
+    <div class="reveal max-w-2xl">
+      <h2 class="text-4xl sm:text-5xl text-forest">{{ ui.t(travel.boutique.heading_en, travel.boutique.heading_es) }}</h2>
+      <p class="mt-4 text-ink/75">{{ ui.t(travel.boutique.intro_en, travel.boutique.intro_es) }}</p>
+    </div>
+    <div class="mt-12 grid gap-8 md:grid-cols-3">
+      {% for b in travel.boutique.list %}
+      <article class="reveal reveal-delay-{{ loop.index }} card overflow-hidden">
+        <img src="{{ b.image }}" alt="" class="h-44 w-full object-cover" />
+        <div class="p-6">
+          <h3 class="text-xl">{{ ui.t(b.name_en, b.name_es) }}</h3>
+          <p class="mt-2 text-sm text-ink/75">{{ ui.t(b.desc_en, b.desc_es) }}</p>
+          <a href="{{ b.url }}" class="mt-4 inline-flex items-center gap-1.5 text-sm text-tangerine hover:text-terracotta">{{ ui.t("View", "Ver") }} {{ ui.icon("arrow","w-4 h-4") }}</a>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+    <p class="reveal mt-8 text-center font-serif italic text-lg text-forest">{{ ui.t(travel.boutique.tip_en, travel.boutique.tip_es) }}</p>
+  </div>
+</section>
+
+<!-- Transport & tips -->
+<section class="bg-ivory">
+  <div class="container mx-auto py-20 lg:py-24">
+    <div class="reveal text-center max-w-2xl mx-auto">
+      <div class="flex items-center justify-center gap-3 text-tangerine">{{ ui.icon("compass","w-8 h-8") }}<h2 class="text-4xl sm:text-5xl text-forest">{{ ui.t(travel.transport.heading_en, travel.transport.heading_es) }}</h2></div>
+    </div>
+    <div class="mt-12 grid gap-6 sm:grid-cols-2">
+      {% for tip in travel.transport.tips %}
+      <div class="reveal card p-7 flex gap-4">
+        <span class="mt-1 flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-tangerine/15 text-tangerine font-serif text-lg">{{ loop.index }}</span>
+        <p class="text-ink/80">{{ ui.t(tip.en, tip.es) }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
