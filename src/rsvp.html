@@ -1,0 +1,115 @@
+---
+layout: default
+title: RSVP
+description: "RSVP to the Welcome Dinner, Wedding Ceremony & Reception, and Post-Wedding Send-Off for Misael & Michelle, March 2027 in Mérida."
+---
+{% import "partials/i18n.html" as ui %}
+
+<!-- Page header -->
+<header class="bg-forest text-ivory">
+  <div class="container mx-auto pt-36 pb-16 lg:pt-44 lg:pb-20 text-center">
+    <p class="reveal eyebrow text-blush">{{ ui.t("March 6, 2027 · Mérida", "6 de Marzo, 2027 · Mérida") }}</p>
+    <h1 class="reveal reveal-delay-1 display text-5xl sm:text-7xl mt-3 text-ivory">{{ ui.t("RSVP", "Confirmar Asistencia") }}</h1>
+    <p class="reveal reveal-delay-2 mt-5 max-w-2xl mx-auto text-ivory/85">
+      {{ ui.t("Kindly respond to each celebration you plan to attend. We can't wait to celebrate with you.", "Por favor responde a cada celebración a la que planeas asistir. No podemos esperar para celebrar contigo.") }}
+    </p>
+    <p class="reveal reveal-delay-2 mt-6 text-sm tracking-widest uppercase text-ivory/60">
+      {{ ui.t("Please reply by January 15, 2027", "Por favor responde antes del 15 de enero de 2027") }}
+    </p>
+  </div>
+</header>
+
+<!-- Quick jump -->
+<nav class="bg-cream border-b border-forest/10 sticky top-[68px] z-30">
+  <div class="container mx-auto flex flex-wrap items-center justify-center gap-2 py-3 text-sm">
+    {% for ev in events.list %}
+    <a href="#{{ ev.rsvp_anchor }}" class="rounded-full px-4 py-1.5 text-forest/80 hover:bg-tangerine hover:text-ivory transition-colors">{{ ui.t(ev.name_en, ev.name_es) }}</a>
+    {% endfor %}
+  </div>
+</nav>
+
+<section class="bg-ivory">
+  <div class="container mx-auto py-16 lg:py-24 max-w-3xl space-y-16">
+    {% for ev in events.list %}
+    <div id="{{ ev.rsvp_anchor }}" class="reveal scroll-mt-32">
+      <div class="text-center mb-8">
+        <div class="rule-monogram mb-5"><span>&amp;</span></div>
+        <h2 class="text-3xl sm:text-4xl text-forest">{{ ui.t(ev.name_en, ev.name_es) }}</h2>
+        <p class="mt-2 text-sm font-medium text-tangerine">{{ ui.t(ev.date_en, ev.date_es) }}</p>
+        <p class="text-sm text-ink/60">{{ ui.t(ev.location_en, ev.location_es) }}</p>
+      </div>
+
+      <form name="rsvp-{{ ev.id }}" method="POST" data-netlify="true" netlify-honeypot="bot-field"
+            action="/thank-you/"
+            class="card p-7 sm:p-10 space-y-5">
+        <input type="hidden" name="form-name" value="rsvp-{{ ev.id }}" />
+        <input type="hidden" name="event" value="{{ ev.name_en }}" />
+        <p class="hidden"><label>{{ ui.t("Leave this empty:", "Deja esto vacío:") }} <input name="bot-field" /></label></p>
+
+        <div class="grid sm:grid-cols-2 gap-5">
+          <div>
+            <label class="field-label" for="{{ ev.id }}-name">{{ ui.t("Guest Name", "Nombre del Invitado") }}</label>
+            <input class="field" id="{{ ev.id }}-name" type="text" name="name" required
+                   placeholder="{{ 'Full name' if true }}" />
+          </div>
+          <div>
+            <label class="field-label" for="{{ ev.id }}-email">{{ ui.t("Email", "Correo Electrónico") }}</label>
+            <input class="field" id="{{ ev.id }}-email" type="email" name="email" required />
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-5">
+          <div>
+            <span class="field-label">{{ ui.t("Will you attend?", "¿Asistirás?") }}</span>
+            <div class="flex gap-3 mt-1">
+              <label class="flex-1 cursor-pointer rounded-2xl border border-forest/15 bg-ivory px-4 py-3 text-sm text-center hover:border-tangerine has-[:checked]:border-tangerine has-[:checked]:bg-tangerine/10">
+                <input class="sr-only" type="radio" name="attending" value="yes" required /> {{ ui.t("Joyfully Yes", "¡Sí, con gusto!") }}
+              </label>
+              <label class="flex-1 cursor-pointer rounded-2xl border border-forest/15 bg-ivory px-4 py-3 text-sm text-center hover:border-tangerine has-[:checked]:border-tangerine has-[:checked]:bg-tangerine/10">
+                <input class="sr-only" type="radio" name="attending" value="no" /> {{ ui.t("Regretfully No", "Lo lamento, no") }}
+              </label>
+            </div>
+          </div>
+          <div>
+            <label class="field-label" for="{{ ev.id }}-guests">{{ ui.t("Number of Guests", "Número de Invitados") }}</label>
+            <select class="field" id="{{ ev.id }}-guests" name="guests">
+              {% for n in [1,2,3,4,5,6] %}<option value="{{ n }}">{{ n }}</option>{% endfor %}
+            </select>
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-5">
+          <div>
+            <label class="field-label" for="{{ ev.id }}-meal">{{ ui.t("Meal Preference", "Preferencia de Comida") }}</label>
+            <select class="field" id="{{ ev.id }}-meal" name="meal_preference">
+              <option value="">{{ ui.t("Select…", "Selecciona…") }}</option>
+              <option value="beef">{{ ui.t("Beef", "Res") }}</option>
+              <option value="chicken">{{ ui.t("Chicken", "Pollo") }}</option>
+              <option value="fish">{{ ui.t("Fish", "Pescado") }}</option>
+              <option value="vegetarian">{{ ui.t("Vegetarian", "Vegetariano") }}</option>
+              <option value="vegan">{{ ui.t("Vegan", "Vegano") }}</option>
+            </select>
+          </div>
+          <div>
+            <label class="field-label" for="{{ ev.id }}-diet">{{ ui.t("Dietary Restrictions", "Restricciones Alimentarias") }}</label>
+            <input class="field" id="{{ ev.id }}-diet" type="text" name="dietary_restrictions" />
+          </div>
+        </div>
+
+        <div>
+          <label class="field-label" for="{{ ev.id }}-song">{{ ui.t("Song Request", "Canción que Pides") }}</label>
+          <input class="field" id="{{ ev.id }}-song" type="text" name="song_request"
+                 placeholder="{{ 'Get us on the dance floor' if true }}" />
+        </div>
+
+        <div>
+          <label class="field-label" for="{{ ev.id }}-notes">{{ ui.t("Notes for the Couple", "Notas para la Pareja") }}</label>
+          <textarea class="field" id="{{ ev.id }}-notes" name="notes" rows="3"></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary w-full">{{ ui.t(ev.rsvp_label_en, ev.rsvp_label_es) }}</button>
+      </form>
+    </div>
+    {% endfor %}
+  </div>
+</section>

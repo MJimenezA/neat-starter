@@ -1,22 +1,163 @@
 ---
 layout: default
-title: Neat Starter
 path: home
+title: ""
+description: "Misael & Michelle are getting married on March 6, 2027 at Hacienda Chichí Suárez in Mérida, Yucatán."
 ---
+{% import "partials/i18n.html" as ui %}
 
-<div class="container mx-auto lg:h-screen flex flex-col justify-center items-center">
-  <h1>
-    Welcome to
-    <strong class="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500">
-      {{title}}
-    </strong>
-  </h1>
+<!-- ================= HERO ================= -->
+<section class="relative min-h-screen flex items-center justify-center text-center text-ivory overflow-hidden">
+  <img src="{{ home.hero.image }}" alt="Hacienda Chichí Suárez"
+       class="absolute inset-0 w-full h-full object-cover" />
+  <div class="absolute inset-0 bg-gradient-to-b from-forest/55 via-forest/30 to-forest/70"></div>
 
-  <p>
-    <abbr title="netlify cms, eleventy, alpine js & tailwind css">NEAT</abbr>
-    Starter Template. Get Started by editing.
-    <code class="bg-gray-100 text-blue-800 p-1">/index.njk</code>
-  </p>
+  <div class="relative container mx-auto px-6 py-32">
+    <p class="reveal eyebrow text-blush">{{ ui.t(home.hero.label_en, home.hero.label_es) }}</p>
 
-  {% include "./_includes/partials/content.html" %}
-</div>
+    <h1 class="reveal reveal-delay-1 display text-ivory text-6xl sm:text-7xl lg:text-8xl mt-5">
+      {{ home.hero.title }}
+    </h1>
+
+    <p class="reveal reveal-delay-2 font-serif italic text-2xl sm:text-3xl mt-4 text-ivory/90">
+      {{ ui.t(home.hero.subtitle_en, home.hero.subtitle_es) }}
+    </p>
+
+    <p class="reveal reveal-delay-2 mt-4 text-base sm:text-lg text-ivory/80 max-w-xl mx-auto">
+      {{ ui.t(home.hero.intro_en, home.hero.intro_es) }}
+    </p>
+
+    <div class="reveal reveal-delay-3 mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+      <a href="{{ home.hero.primary_url }}" class="btn-primary w-full sm:w-auto">{{ ui.t(home.hero.primary_label_en, home.hero.primary_label_es) }}</a>
+      <a href="{{ home.hero.secondary_url }}" class="btn-ghost w-full sm:w-auto">{{ ui.t(home.hero.secondary_label_en, home.hero.secondary_label_es) }}</a>
+    </div>
+  </div>
+
+  <a href="#details" class="absolute bottom-8 left-1/2 -translate-x-1/2 text-ivory/80 animate-bounce-soft" aria-label="Scroll down">
+    {{ ui.icon("chevron-down", "w-8 h-8") }}
+  </a>
+</section>
+
+<!-- ================= DETAILS ================= -->
+<section id="details" class="bg-cream">
+  <div class="container mx-auto py-20 lg:py-28">
+    <div class="reveal max-w-2xl mx-auto text-center">
+      <div class="rule-monogram mb-8"><span>&amp;</span></div>
+      <p class="font-serif text-2xl sm:text-3xl leading-relaxed text-forest text-balance">
+        {{ ui.t(home.details.blurb_en, home.details.blurb_es) }}
+      </p>
+    </div>
+
+    <div class="mt-16 grid gap-10 md:grid-cols-3">
+      {% for col in home.details.columns %}
+      <div class="reveal reveal-delay-{{ loop.index }} text-center">
+        <div class="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-ivory text-tangerine shadow-soft">
+          {{ ui.icon(col.icon, "w-7 h-7") }}
+        </div>
+        <h3 class="text-2xl">{{ ui.t(col.title_en, col.title_es) }}</h3>
+        <p class="mt-2 text-ink/75">{{ ui.t(col.body_en, col.body_es) }}</p>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- ================= COUNTDOWN ================= -->
+<section class="relative bg-forest text-ivory overflow-hidden">
+  <div class="pointer-events-none absolute -right-10 -top-10 text-tangerine/20 animate-drift">
+    {{ ui.icon("sprig", "w-56 h-56") }}
+  </div>
+  <div class="pointer-events-none absolute -left-12 bottom-0 text-blush/20 animate-drift" style="animation-delay:-3s">
+    {{ ui.icon("sprig", "w-48 h-48") }}
+  </div>
+
+  <div class="relative container mx-auto py-20 lg:py-24 text-center">
+    <p class="reveal eyebrow text-blush">{{ ui.t(home.countdown.label_en, home.countdown.label_es) }}</p>
+    <div class="reveal reveal-delay-1 mt-8 grid grid-cols-4 gap-3 sm:gap-8 max-w-2xl mx-auto">
+      {% set units = [["cd-days","Days","Días"],["cd-hours","Hours","Horas"],["cd-mins","Minutes","Minutos"],["cd-secs","Seconds","Segundos"]] %}
+      {% for u in units %}
+      <div>
+        <div id="{{ u[0] }}" class="font-serif text-4xl sm:text-6xl text-tangerine tabular-nums">00</div>
+        <div class="mt-1 text-[0.65rem] sm:text-xs uppercase tracking-widest2 text-ivory/60">{{ ui.t(u[1], u[2]) }}</div>
+      </div>
+      {% endfor %}
+    </div>
+    <p class="reveal mt-10 font-serif italic text-xl text-ivory/80">{{ site.venue }} · {{ ui.t("March 6, 2027", "6 de Marzo, 2027") }}</p>
+  </div>
+</section>
+
+<!-- ================= EVENTS ================= -->
+<section class="bg-ivory">
+  <div class="container mx-auto py-20 lg:py-28">
+    <div class="reveal text-center max-w-2xl mx-auto">
+      <p class="eyebrow">{{ ui.t(home.events_intro.heading_en, home.events_intro.heading_es) }}</p>
+      <h2 class="text-4xl sm:text-5xl mt-3">{{ ui.t("Our Weekend", "Nuestro Fin de Semana") }}</h2>
+      <p class="mt-5 text-ink/75">{{ ui.t(home.events_intro.blurb_en, home.events_intro.blurb_es) }}</p>
+    </div>
+
+    <div class="mt-14 grid gap-8 lg:grid-cols-3">
+      {% for ev in events.list %}
+      <article class="reveal reveal-delay-{{ loop.index }} card overflow-hidden border-l-4 border-tangerine flex flex-col">
+        <img src="{{ ev.image }}" alt="" class="h-48 w-full object-cover" />
+        <div class="p-7 flex flex-col flex-1">
+          <h3 class="text-2xl leading-tight">{{ ui.t(ev.name_en, ev.name_es) }}</h3>
+          <p class="mt-2 text-sm font-medium text-tangerine">{{ ui.t(ev.date_en, ev.date_es) }}</p>
+          <p class="text-sm text-ink/60">{{ ui.t(ev.location_en, ev.location_es) }}</p>
+          <p class="mt-4 text-ink/75 flex-1">{{ ui.t(ev.short_en, ev.short_es) }}</p>
+          <a href="/rsvp/#{{ ev.rsvp_anchor }}" class="btn-outline btn-sm mt-6 self-start">{{ ui.t(ev.rsvp_label_en, ev.rsvp_label_es) }}</a>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+
+    <div class="reveal mt-12 text-center">
+      <a href="/events/" class="btn-primary">{{ ui.t("View Event Details", "Ver Detalles de Eventos") }} {{ ui.icon("arrow","w-4 h-4") }}</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= TRAVEL TEASER ================= -->
+<section class="bg-sage/60">
+  <div class="container mx-auto py-20 lg:py-28 grid lg:grid-cols-2 gap-12 items-center">
+    <div class="reveal order-2 lg:order-1">
+      <p class="eyebrow">{{ ui.t(home.travel_teaser.heading_en, home.travel_teaser.heading_es) }}</p>
+      <h2 class="text-4xl sm:text-5xl mt-3">{{ ui.t("Travel to Mérida", "Viaja a Mérida") }}</h2>
+      <p class="mt-5 text-ink/80 max-w-lg">{{ ui.t(home.travel_teaser.blurb_en, home.travel_teaser.blurb_es) }}</p>
+      <a href="{{ home.travel_teaser.url }}" class="btn-primary mt-8">{{ ui.t(home.travel_teaser.button_en, home.travel_teaser.button_es) }} {{ ui.icon("arrow","w-4 h-4") }}</a>
+    </div>
+    <div class="reveal reveal-delay-1 order-1 lg:order-2">
+      <img src="{{ home.travel_teaser.image }}" alt="Mérida" class="rounded-4xl shadow-card w-full h-72 lg:h-96 object-cover" />
+    </div>
+  </div>
+</section>
+
+<!-- ================= STAY TEASER ================= -->
+<section class="bg-blush/50">
+  <div class="container mx-auto py-20 lg:py-28">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div class="reveal grid grid-cols-3 gap-4">
+        {% for thumb in home.stay_teaser.thumbnails %}
+        <img src="{{ thumb }}" alt="" class="rounded-3xl shadow-soft h-32 sm:h-44 w-full object-cover {{ 'mt-6' if loop.index == 2 }}" />
+        {% endfor %}
+      </div>
+      <div class="reveal reveal-delay-1">
+        <p class="eyebrow">{{ ui.t(home.stay_teaser.heading_en, home.stay_teaser.heading_es) }}</p>
+        <h2 class="text-4xl sm:text-5xl mt-3">{{ ui.t("Where to Stay", "Dónde Hospedarse") }}</h2>
+        <p class="mt-5 text-ink/80 max-w-lg">{{ ui.t(home.stay_teaser.blurb_en, home.stay_teaser.blurb_es) }}</p>
+        <a href="{{ home.stay_teaser.url }}" class="btn-outline mt-8">{{ ui.t(home.stay_teaser.button_en, home.stay_teaser.button_es) }} {{ ui.icon("arrow","w-4 h-4") }}</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EXPLORE TEASER ================= -->
+<section class="relative text-ivory overflow-hidden">
+  <img src="{{ home.explore_teaser.image }}" alt="Mérida" class="absolute inset-0 w-full h-full object-cover" />
+  <div class="absolute inset-0 bg-forest/65"></div>
+  <div class="relative container mx-auto py-24 lg:py-32 text-center">
+    <p class="reveal eyebrow text-blush">{{ ui.t(home.explore_teaser.heading_en, home.explore_teaser.heading_es) }}</p>
+    <h2 class="reveal reveal-delay-1 text-4xl sm:text-6xl mt-3 text-ivory">{{ ui.t("Discover the White City", "Descubre la Ciudad Blanca") }}</h2>
+    <p class="reveal reveal-delay-2 mt-5 max-w-2xl mx-auto text-ivory/85">{{ ui.t(home.explore_teaser.blurb_en, home.explore_teaser.blurb_es) }}</p>
+    <a href="{{ home.explore_teaser.url }}" class="reveal reveal-delay-3 btn-light mt-8">{{ ui.t(home.explore_teaser.button_en, home.explore_teaser.button_es) }} {{ ui.icon("arrow","w-4 h-4") }}</a>
+  </div>
+</section>

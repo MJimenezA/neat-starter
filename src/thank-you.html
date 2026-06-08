@@ -1,0 +1,23 @@
+---
+layout: default
+title: Thank You
+description: "Thank you for your RSVP."
+---
+{% import "partials/i18n.html" as ui %}
+
+<section class="relative min-h-screen flex items-center justify-center text-center text-ivory overflow-hidden">
+  <img src="/static/img/placeholders/wedding.svg" alt="" class="absolute inset-0 w-full h-full object-cover" />
+  <div class="absolute inset-0 bg-forest/70"></div>
+
+  <div class="relative container mx-auto px-6 py-32 max-w-2xl">
+    <div class="font-serif text-5xl italic text-tangerine">{{ site.monogram }}</div>
+    <h1 class="display text-5xl sm:text-7xl mt-6 text-ivory">{{ ui.t("Thank You", "¡Gracias!") }}</h1>
+    <p class="mt-6 text-lg text-ivory/85">
+      {{ ui.t("Your RSVP has been received. We're so happy you'll be part of our weekend in Mérida — more details are on the way.", "Hemos recibido tu confirmación. Estamos muy felices de que seas parte de nuestro fin de semana en Mérida — pronto compartiremos más detalles.") }}
+    </p>
+    <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+      <a href="/" class="btn-light">{{ ui.t("Back to Home", "Volver al Inicio") }}</a>
+      <a href="/travel/" class="btn-ghost">{{ ui.t("Plan Your Trip", "Planea tu Viaje") }}</a>
+    </div>
+  </div>
+</section>

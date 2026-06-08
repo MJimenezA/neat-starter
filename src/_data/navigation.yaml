@@ -1,10 +1,17 @@
 ---
 items:
-  - text: Menu One
-    url: "#"
-  - text: Menu Two
-    url: "#"
-  - text: Menu Three
-    url: "#"
-  - text: Blog
-    url: "/blog"
+  - text_en: Home
+    text_es: Inicio
+    url: "/"
+  - text_en: Events
+    text_es: Eventos
+    url: "/events/"
+  - text_en: Travel & Stay
+    text_es: Viaje y Hospedaje
+    url: "/travel/"
+  - text_en: Explore Mérida
+    text_es: Explora Mérida
+    url: "/explore/"
+  - text_en: RSVP
+    text_es: Confirmar
+    url: "/rsvp/"

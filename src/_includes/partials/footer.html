@@ -1,9 +1,28 @@
-<footer class="{{ 'fixed' if path == 'home' }} bottom-0 text-center w-full py-4">
-    <small class="text-gray-500">Copyright ©
-        {{settings.name}}
-        2020. Made with ❤ by
-        <a href="{{settings.url}}" target="_blank" class="underline">{{settings.author}}</a>
-        •
-        <a href="https://github.com/surjithctly/neat-starter" class="underline" target="_blank" rel="noopener">View on Github</a>
-    </small>
+{% import "partials/i18n.html" as ui %}
+
+<footer class="bg-forest text-ivory">
+  <div class="container mx-auto py-16 text-center">
+    <div class="font-serif text-4xl italic text-tangerine">{{ site.monogram }}</div>
+
+    <p class="mt-5 font-serif text-2xl">{{ site.couple }}</p>
+    <p class="mt-1 text-sm tracking-widest2 uppercase text-ivory/70">
+      {{ ui.t(site.date_label_en, site.date_label_es) }}
+    </p>
+
+    <div class="my-8 rule-monogram text-tangerine/70"><span>&amp;</span></div>
+
+    <nav class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm text-ivory/80">
+      {% for item in navigation.items %}
+      <a href="{{ item.url }}" class="hover:text-tangerine transition-colors">{{ ui.t(item.text_en, item.text_es) }}</a>
+      {% endfor %}
+    </nav>
+
+    {% if site.instagram_url %}
+    <a href="{{ site.instagram_url }}" target="_blank" rel="noopener" class="mt-6 inline-block text-sm text-ivory/70 hover:text-tangerine">{{ site.instagram_handle }}</a>
+    {% endif %}
+
+    <p class="mt-8 text-xs tracking-widest uppercase text-ivory/50">
+      {{ ui.t(site.footer_note_en, site.footer_note_es) }} · {{ site.location }}
+    </p>
+  </div>
 </footer>

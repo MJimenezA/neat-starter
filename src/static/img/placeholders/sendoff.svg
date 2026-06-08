@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1100" viewBox="0 0 1600 1100" role="img" aria-label="Send-Off Brunch">
+  <defs>
+    <linearGradient id="gsendoff" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#EEC9C2"/>
+      <stop offset="1" stop-color="#d9a79e"/>
+    </linearGradient>
+    <radialGradient id="vsendoff" cx="0.5" cy="0.42" r="0.75">
+      <stop offset="0.55" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#1c2410" stop-opacity="0.18"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="1100" fill="url(#gsendoff)"/>
+  <g opacity="0.5">
+    <g><ellipse cx="296" cy="220" rx="31.200000000000003" ry="16.8" fill="#F2EDE6" opacity="0.85" transform="rotate(0 296 220)"/><ellipse cx="276" cy="254.64101615137753" rx="31.200000000000003" ry="16.8" fill="#F2EDE6" opacity="0.85" transform="rotate(60 276 254.64101615137753)"/><ellipse cx="236" cy="254.64101615137756" rx="31.200000000000003" ry="16.8" fill="#F2EDE6" opacity="0.85" transform="rotate(120 236 254.64101615137756)"/><ellipse cx="216" cy="220" rx="31.200000000000003" ry="16.8" fill="#F2EDE6" opacity="0.85" transform="rotate(180 216 220)"/><ellipse cx="235.99999999999997" cy="185.35898384862247" rx="31.200000000000003" ry="16.8" fill="#F2EDE6" opacity="0.85" transform="rotate(240 235.99999999999997 185.35898384862247)"/><ellipse cx="276" cy="185.35898384862247" rx="31.200000000000003" ry="16.8" fill="#F2EDE6" opacity="0.85" transform="rotate(300 276 185.35898384862247)"/><circle cx="256" cy="220" r="20" fill="#F5903A"/></g>
+    <g><ellipse cx="1428" cy="858" rx="40.56" ry="21.84" fill="#F2EDE6" opacity="0.85" transform="rotate(0 1428 858)"/><ellipse cx="1402" cy="903.0333209967908" rx="40.56" ry="21.84" fill="#F2EDE6" opacity="0.85" transform="rotate(60 1402 903.0333209967908)"/><ellipse cx="1350" cy="903.0333209967908" rx="40.56" ry="21.84" fill="#F2EDE6" opacity="0.85" transform="rotate(120 1350 903.0333209967908)"/><ellipse cx="1324" cy="858" rx="40.56" ry="21.84" fill="#F2EDE6" opacity="0.85" transform="rotate(180 1324 858)"/><ellipse cx="1350" cy="812.9666790032092" rx="40.56" ry="21.84" fill="#F2EDE6" opacity="0.85" transform="rotate(240 1350 812.9666790032092)"/><ellipse cx="1402" cy="812.9666790032092" rx="40.56" ry="21.84" fill="#F2EDE6" opacity="0.85" transform="rotate(300 1402 812.9666790032092)"/><circle cx="1376" cy="858" r="26" fill="#F5903A"/></g>
+    <g transform="translate(128 1012) rotate(18) scale(1.6)" fill="#2C3B1A" opacity="0.9">
+    <path d="M0 60 C 0 10, 0 -30, 0 -70" stroke="#2C3B1A" stroke-width="3" fill="none"/>
+    <path d="M0 -50 C 22 -56, 30 -72, 10 -80 C 4 -68, 4 -56, 0 -50 Z"/><path d="M0 -30 C -22 -36, -30 -52, -10 -60 C -4 -48, -4 -36, 0 -30 Z"/><path d="M0 -10 C 22 -16, 30 -32, 10 -40 C 4 -28, 4 -16, 0 -10 Z"/><path d="M0 10 C -22 4, -30 -12, -10 -20 C -4 -8, -4 4, 0 10 Z"/><path d="M0 30 C 22 24, 30 8, 10 0 C 4 12, 4 24, 0 30 Z"/>
+    <circle cx="0" cy="-72" r="9" fill="#2C3B1A"/>
+  </g>
+    <g transform="translate(1488 176) rotate(-22) scale(1.3)" fill="#2C3B1A" opacity="0.9">
+    <path d="M0 60 C 0 10, 0 -30, 0 -70" stroke="#2C3B1A" stroke-width="3" fill="none"/>
+    <path d="M0 -50 C 22 -56, 30 -72, 10 -80 C 4 -68, 4 -56, 0 -50 Z"/><path d="M0 -30 C -22 -36, -30 -52, -10 -60 C -4 -48, -4 -36, 0 -30 Z"/><path d="M0 -10 C 22 -16, 30 -32, 10 -40 C 4 -28, 4 -16, 0 -10 Z"/><path d="M0 10 C -22 4, -30 -12, -10 -20 C -4 -8, -4 4, 0 10 Z"/><path d="M0 30 C 22 24, 30 8, 10 0 C 4 12, 4 24, 0 30 Z"/>
+    <circle cx="0" cy="-72" r="9" fill="#2C3B1A"/>
+  </g>
+    <g><ellipse cx="1278" cy="198" rx="23.400000000000002" ry="12.6" fill="#EEC9C2" opacity="0.85" transform="rotate(0 1278 198)"/><ellipse cx="1263" cy="223.98076211353316" rx="23.400000000000002" ry="12.6" fill="#EEC9C2" opacity="0.85" transform="rotate(60 1263 223.98076211353316)"/><ellipse cx="1233" cy="223.98076211353316" rx="23.400000000000002" ry="12.6" fill="#EEC9C2" opacity="0.85" transform="rotate(120 1233 223.98076211353316)"/><ellipse cx="1218" cy="198" rx="23.400000000000002" ry="12.6" fill="#EEC9C2" opacity="0.85" transform="rotate(180 1218 198)"/><ellipse cx="1233" cy="172.01923788646684" rx="23.400000000000002" ry="12.6" fill="#EEC9C2" opacity="0.85" transform="rotate(240 1233 172.01923788646684)"/><ellipse cx="1263" cy="172.01923788646684" rx="23.400000000000002" ry="12.6" fill="#EEC9C2" opacity="0.85" transform="rotate(300 1263 172.01923788646684)"/><circle cx="1248" cy="198" r="15" fill="#F5903A"/></g>
+  </g>
+  <rect width="1600" height="1100" fill="url(#vsendoff)"/>
+  <g text-anchor="middle" font-family="'Cormorant Garamond', Georgia, serif">
+    <text x="800" y="544" font-size="80" fill="#F5F0E8" font-style="italic" opacity="0.96">Send-Off Brunch</text>
+    <text x="800" y="594" font-size="29" letter-spacing="6" fill="#F5F0E8" font-family="'Jost', sans-serif" opacity="0.8">PLACEHOLDER · REPLACE IN ADMIN</text>
+  </g>
+</svg>

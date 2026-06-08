@@ -1,68 +1,380 @@
 backend:
-  # Use netlify identity as backend
   name: git-gateway
   branch: master
-  ### enable below lines for github integration ###
-  # name: github
-  # repo: surjithctly/neat-starter
+
 media_folder: "src/static/img"
 public_folder: "/static/img"
 
-# Please run "npx netlify-cms-proxy-server" for local backend
+# Run "npx decap-server" for local editing
 local_backend: true
-# publish_mode: editorial_workflow
+
 collections:
-  - label: "Blog"
-    name: "blog"
-    folder: "src/posts"
-    create: true
-    editor:
-      preview: false
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "string" }
-      - { label: "Author", name: "author", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Body", name: "body", widget: "markdown" }
-      - widget: select
-        label: "tags"
-        name: "tags"
-        multiple: true
-        create: true
-        options: ["Tags", "created", "from", "config.yml"]
-  - label: "Settings"
-    name: "settings"
+  # ----------------------------------------------------------------
+  - label: "Site Settings"
+    name: "site"
+    delete: false
     editor:
       preview: false
     files:
+      - label: "General"
+        name: "general"
+        file: "src/_data/site.yaml"
+        fields:
+          - { label: "Couple Names", name: "couple", widget: "string" }
+          - { label: "Monogram", name: "monogram", widget: "string" }
+          - { label: "Date Label (EN)", name: "date_label_en", widget: "string" }
+          - { label: "Date Label (ES)", name: "date_label_es", widget: "string" }
+          - { label: "Venue", name: "venue", widget: "string" }
+          - { label: "Location", name: "location", widget: "string" }
+          - { label: "Wedding Date (for countdown)", name: "wedding_date", widget: "datetime" }
+          - { label: "Instagram Handle", name: "instagram_handle", widget: "string", required: false }
+          - { label: "Instagram URL", name: "instagram_url", widget: "string", required: false }
+          - { label: "Footer Note (EN)", name: "footer_note_en", widget: "string" }
+          - { label: "Footer Note (ES)", name: "footer_note_es", widget: "string" }
+
       - label: "Navigation"
-        name: "items"
+        name: "navigation"
         file: "src/_data/navigation.yaml"
         fields:
-          - label: Nav Items
-            name: items
-            widget: list
-            allow_add: false
-            collapsed: false
+          - label: "Menu Items"
+            name: "items"
+            widget: "list"
             fields:
-              - { label: Title, name: text, widget: string }
-              - { label: URL, name: url, widget: string }
-      - label: "Quick Links"
-        name: "links"
-        file: "src/_data/quicklinks.yaml"
+              - { label: "Label (EN)", name: "text_en", widget: "string" }
+              - { label: "Label (ES)", name: "text_es", widget: "string" }
+              - { label: "URL", name: "url", widget: "string" }
+
+  # ----------------------------------------------------------------
+  - label: "Home Page"
+    name: "home"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - label: "Home Sections"
+        name: "home"
+        file: "src/_data/home.yaml"
         fields:
-          - label: Nav Items
-            name: links
-            widget: list
-            collapsed: false
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
             fields:
-              - { label: Title, name: title, widget: string }
-              - { label: URL, name: url, widget: string }
-              - { label: Description, name: desc, widget: string }
-      - label: "Meta Settings"
-        name: "settings"
-        file: "src/_data/settings.yaml"
+              - { label: "Background Image", name: "image", widget: "image" }
+              - { label: "Top Label (EN)", name: "label_en", widget: "string" }
+              - { label: "Top Label (ES)", name: "label_es", widget: "string" }
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Subtitle (EN)", name: "subtitle_en", widget: "string" }
+              - { label: "Subtitle (ES)", name: "subtitle_es", widget: "string" }
+              - { label: "Intro Line (EN)", name: "intro_en", widget: "string" }
+              - { label: "Intro Line (ES)", name: "intro_es", widget: "string" }
+              - { label: "Primary Button (EN)", name: "primary_label_en", widget: "string" }
+              - { label: "Primary Button (ES)", name: "primary_label_es", widget: "string" }
+              - { label: "Primary Button URL", name: "primary_url", widget: "string" }
+              - { label: "Secondary Button (EN)", name: "secondary_label_en", widget: "string" }
+              - { label: "Secondary Button (ES)", name: "secondary_label_es", widget: "string" }
+              - { label: "Secondary Button URL", name: "secondary_url", widget: "string" }
+          - label: "Wedding Details"
+            name: "details"
+            widget: "object"
+            fields:
+              - { label: "Blurb (EN)", name: "blurb_en", widget: "text" }
+              - { label: "Blurb (ES)", name: "blurb_es", widget: "text" }
+              - label: "Columns"
+                name: "columns"
+                widget: "list"
+                fields:
+                  - { label: "Icon", name: "icon", widget: "select", options: ["calendar", "pin", "attire"] }
+                  - { label: "Title (EN)", name: "title_en", widget: "string" }
+                  - { label: "Title (ES)", name: "title_es", widget: "string" }
+                  - { label: "Body (EN)", name: "body_en", widget: "string" }
+                  - { label: "Body (ES)", name: "body_es", widget: "string" }
+          - label: "Countdown"
+            name: "countdown"
+            widget: "object"
+            fields:
+              - { label: "Label (EN)", name: "label_en", widget: "string" }
+              - { label: "Label (ES)", name: "label_es", widget: "string" }
+          - label: "Events Intro"
+            name: "events_intro"
+            widget: "object"
+            fields:
+              - { label: "Heading (EN)", name: "heading_en", widget: "string" }
+              - { label: "Heading (ES)", name: "heading_es", widget: "string" }
+              - { label: "Blurb (EN)", name: "blurb_en", widget: "text" }
+              - { label: "Blurb (ES)", name: "blurb_es", widget: "text" }
+          - label: "Travel Teaser"
+            name: "travel_teaser"
+            widget: "object"
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Heading (EN)", name: "heading_en", widget: "string" }
+              - { label: "Heading (ES)", name: "heading_es", widget: "string" }
+              - { label: "Blurb (EN)", name: "blurb_en", widget: "text" }
+              - { label: "Blurb (ES)", name: "blurb_es", widget: "text" }
+              - { label: "Button (EN)", name: "button_en", widget: "string" }
+              - { label: "Button (ES)", name: "button_es", widget: "string" }
+              - { label: "URL", name: "url", widget: "string" }
+          - label: "Stay Teaser"
+            name: "stay_teaser"
+            widget: "object"
+            fields:
+              - { label: "Heading (EN)", name: "heading_en", widget: "string" }
+              - { label: "Heading (ES)", name: "heading_es", widget: "string" }
+              - { label: "Blurb (EN)", name: "blurb_en", widget: "text" }
+              - { label: "Blurb (ES)", name: "blurb_es", widget: "text" }
+              - { label: "Button (EN)", name: "button_en", widget: "string" }
+              - { label: "Button (ES)", name: "button_es", widget: "string" }
+              - { label: "URL", name: "url", widget: "string" }
+              - { label: "Thumbnails", name: "thumbnails", widget: "list", field: { label: "Image", name: "image", widget: "image" } }
+          - label: "Explore Teaser"
+            name: "explore_teaser"
+            widget: "object"
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Heading (EN)", name: "heading_en", widget: "string" }
+              - { label: "Heading (ES)", name: "heading_es", widget: "string" }
+              - { label: "Blurb (EN)", name: "blurb_en", widget: "text" }
+              - { label: "Blurb (ES)", name: "blurb_es", widget: "text" }
+              - { label: "Button (EN)", name: "button_en", widget: "string" }
+              - { label: "Button (ES)", name: "button_es", widget: "string" }
+              - { label: "URL", name: "url", widget: "string" }
+
+  # ----------------------------------------------------------------
+  - label: "Events"
+    name: "events"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - label: "Events & Schedule"
+        name: "events"
+        file: "src/_data/events.yaml"
         fields:
-          - { label: Name, name: name, widget: string }
-          - { label: Author, name: author, widget: string }
-          - { label: URL, name: url, widget: string }
+          - { label: "Intro (EN)", name: "intro_en", widget: "text" }
+          - { label: "Intro (ES)", name: "intro_es", widget: "text" }
+          - label: "Events"
+            name: "list"
+            widget: "list"
+            fields:
+              - { label: "ID (no spaces, used in links)", name: "id", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Name (EN)", name: "name_en", widget: "string" }
+              - { label: "Name (ES)", name: "name_es", widget: "string" }
+              - { label: "Date/Time (EN)", name: "date_en", widget: "string" }
+              - { label: "Date/Time (ES)", name: "date_es", widget: "string" }
+              - { label: "Location (EN)", name: "location_en", widget: "string" }
+              - { label: "Location (ES)", name: "location_es", widget: "string" }
+              - { label: "Short Description (EN)", name: "short_en", widget: "text" }
+              - { label: "Short Description (ES)", name: "short_es", widget: "text" }
+              - { label: "Full Description (EN)", name: "long_en", widget: "text" }
+              - { label: "Full Description (ES)", name: "long_es", widget: "text" }
+              - { label: "RSVP Anchor", name: "rsvp_anchor", widget: "string" }
+              - { label: "RSVP Button (EN)", name: "rsvp_label_en", widget: "string" }
+              - { label: "RSVP Button (ES)", name: "rsvp_label_es", widget: "string" }
+          - label: "Wedding-Day Schedule"
+            name: "schedule"
+            widget: "list"
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Time (EN)", name: "time_en", widget: "string" }
+              - { label: "Time (ES)", name: "time_es", widget: "string" }
+              - { label: "Title (EN)", name: "title_en", widget: "string" }
+              - { label: "Title (ES)", name: "title_es", widget: "string" }
+              - { label: "Body (EN)", name: "body_en", widget: "text" }
+              - { label: "Body (ES)", name: "body_es", widget: "text" }
+
+  # ----------------------------------------------------------------
+  - label: "Travel & Stay"
+    name: "travel"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - label: "Travel & Stay Page"
+        name: "travel"
+        file: "src/_data/travel.yaml"
+        fields:
+          - label: "Header"
+            name: "header"
+            widget: "object"
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Title (EN)", name: "title_en", widget: "string" }
+              - { label: "Title (ES)", name: "title_es", widget: "string" }
+              - { label: "Subtitle (EN)", name: "subtitle_en", widget: "string" }
+              - { label: "Subtitle (ES)", name: "subtitle_es", widget: "string" }
+          - label: "Getting Here"
+            name: "getting_here"
+            widget: "object"
+            fields:
+              - { label: "Heading (EN)", name: "heading_en", widget: "string" }
+              - { label: "Heading (ES)", name: "heading_es", widget: "string" }
+              - label: "Points"
+                name: "points"
+                widget: "list"
+                fields:
+                  - { label: "EN", name: "en", widget: "string" }
+                  - { label: "ES", name: "es", widget: "string" }
+          - label: "When to Arrive"
+            name: "when_to_arrive"
+            widget: "object"
+            fields:
+              - { label: "Heading (EN)", name: "heading_en", widget: "string" }
+              - { label: "Heading (ES)", name: "heading_es", widget: "string" }
+              - { label: "Body (EN)", name: "body_en", widget: "text" }
+              - { label: "Body (ES)", name: "body_es", widget: "text" }
+          - label: "Recommended Areas"
+            name: "areas"
+            widget: "object"
+            fields:
+              - { label: "Heading (EN)", name: "heading_en", widget: "string" }
+              - { label: "Heading (ES)", name: "heading_es", widget: "string" }
+              - label: "Areas"
+                name: "list"
+                widget: "list"
+                fields:
+                  - { label: "Image", name: "image", widget: "image" }
+                  - { label: "Name (EN)", name: "name_en", widget: "string" }
+                  - { label: "Name (ES)", name: "name_es", widget: "string" }
+                  - { label: "Description (EN)", name: "desc_en", widget: "text" }
+                  - { label: "Description (ES)", name: "desc_es", widget: "text" }
+                  - { label: "Distance (EN)", name: "distance_en", widget: "string" }
+                  - { label: "Distance (ES)", name: "distance_es", widget: "string" }
+          - label: "Hotel Room Blocks"
+            name: "hotels"
+            widget: "object"
+            fields:
+              - { label: "Heading (EN)", name: "heading_en", widget: "string" }
+              - { label: "Heading (ES)", name: "heading_es", widget: "string" }
+              - { label: "Intro (EN)", name: "intro_en", widget: "text" }
+              - { label: "Intro (ES)", name: "intro_es", widget: "text" }
+              - label: "Hotels"
+                name: "list"
+                widget: "list"
+                fields:
+                  - { label: "Image", name: "image", widget: "image" }
+                  - { label: "Name (EN)", name: "name_en", widget: "string" }
+                  - { label: "Name (ES)", name: "name_es", widget: "string" }
+                  - { label: "Area (EN)", name: "area_en", widget: "string" }
+                  - { label: "Area (ES)", name: "area_es", widget: "string" }
+                  - { label: "Notes (EN)", name: "notes_en", widget: "text" }
+                  - { label: "Notes (ES)", name: "notes_es", widget: "text" }
+                  - { label: "Amenities (EN)", name: "amenities_en", widget: "string" }
+                  - { label: "Amenities (ES)", name: "amenities_es", widget: "string" }
+                  - { label: "Button (EN)", name: "button_en", widget: "string" }
+                  - { label: "Button (ES)", name: "button_es", widget: "string" }
+                  - { label: "Booking URL", name: "url", widget: "string" }
+          - label: "Boutique & Airbnb"
+            name: "boutique"
+            widget: "object"
+            fields:
+              - { label: "Heading (EN)", name: "heading_en", widget: "string" }
+              - { label: "Heading (ES)", name: "heading_es", widget: "string" }
+              - { label: "Intro (EN)", name: "intro_en", widget: "text" }
+              - { label: "Intro (ES)", name: "intro_es", widget: "text" }
+              - label: "Options"
+                name: "list"
+                widget: "list"
+                fields:
+                  - { label: "Image", name: "image", widget: "image" }
+                  - { label: "Name (EN)", name: "name_en", widget: "string" }
+                  - { label: "Name (ES)", name: "name_es", widget: "string" }
+                  - { label: "Description (EN)", name: "desc_en", widget: "text" }
+                  - { label: "Description (ES)", name: "desc_es", widget: "text" }
+                  - { label: "URL", name: "url", widget: "string" }
+              - { label: "Tip (EN)", name: "tip_en", widget: "string" }
+              - { label: "Tip (ES)", name: "tip_es", widget: "string" }
+          - label: "Transport & Tips"
+            name: "transport"
+            widget: "object"
+            fields:
+              - { label: "Heading (EN)", name: "heading_en", widget: "string" }
+              - { label: "Heading (ES)", name: "heading_es", widget: "string" }
+              - label: "Tips"
+                name: "tips"
+                widget: "list"
+                fields:
+                  - { label: "EN", name: "en", widget: "string" }
+                  - { label: "ES", name: "es", widget: "string" }
+
+  # ----------------------------------------------------------------
+  - label: "Explore Mérida"
+    name: "explore"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - label: "Explore Mérida Page"
+        name: "explore"
+        file: "src/_data/explore.yaml"
+        fields:
+          - label: "Header"
+            name: "header"
+            widget: "object"
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Title (EN)", name: "title_en", widget: "string" }
+              - { label: "Title (ES)", name: "title_es", widget: "string" }
+              - { label: "Subtitle (EN)", name: "subtitle_en", widget: "text" }
+              - { label: "Subtitle (ES)", name: "subtitle_es", widget: "text" }
+          - label: "Must-See Sights"
+            name: "sights"
+            widget: "object"
+            fields:
+              - { label: "Heading (EN)", name: "heading_en", widget: "string" }
+              - { label: "Heading (ES)", name: "heading_es", widget: "string" }
+              - label: "Sights"
+                name: "list"
+                widget: "list"
+                fields:
+                  - { label: "Image", name: "image", widget: "image" }
+                  - { label: "Name (EN)", name: "name_en", widget: "string" }
+                  - { label: "Name (ES)", name: "name_es", widget: "string" }
+                  - { label: "Description (EN)", name: "desc_en", widget: "text" }
+                  - { label: "Description (ES)", name: "desc_es", widget: "text" }
+          - label: "Day Trips & Nature"
+            name: "daytrips"
+            widget: "object"
+            fields:
+              - { label: "Heading (EN)", name: "heading_en", widget: "string" }
+              - { label: "Heading (ES)", name: "heading_es", widget: "string" }
+              - label: "Day Trips"
+                name: "list"
+                widget: "list"
+                fields:
+                  - { label: "Image", name: "image", widget: "image" }
+                  - { label: "Name (EN)", name: "name_en", widget: "string" }
+                  - { label: "Name (ES)", name: "name_es", widget: "string" }
+                  - { label: "Description (EN)", name: "desc_en", widget: "text" }
+                  - { label: "Description (ES)", name: "desc_es", widget: "text" }
+          - label: "Food & Drink"
+            name: "food"
+            widget: "object"
+            fields:
+              - { label: "Heading (EN)", name: "heading_en", widget: "string" }
+              - { label: "Heading (ES)", name: "heading_es", widget: "string" }
+              - { label: "Intro (EN)", name: "intro_en", widget: "text" }
+              - { label: "Intro (ES)", name: "intro_es", widget: "text" }
+              - { label: "Image", name: "image", widget: "image" }
+              - label: "Highlights"
+                name: "blocks"
+                widget: "list"
+                fields:
+                  - { label: "Title (EN)", name: "title_en", widget: "string" }
+                  - { label: "Title (ES)", name: "title_es", widget: "string" }
+                  - { label: "Body (EN)", name: "body_en", widget: "text" }
+                  - { label: "Body (ES)", name: "body_es", widget: "text" }
+          - label: "Practical Tips"
+            name: "tips"
+            widget: "object"
+            fields:
+              - { label: "Heading (EN)", name: "heading_en", widget: "string" }
+              - { label: "Heading (ES)", name: "heading_es", widget: "string" }
+              - label: "Tips"
+                name: "list"
+                widget: "list"
+                fields:
+                  - { label: "Title (EN)", name: "title_en", widget: "string" }
+                  - { label: "Title (ES)", name: "title_es", widget: "string" }
+                  - { label: "Body (EN)", name: "body_en", widget: "text" }
+                  - { label: "Body (ES)", name: "body_es", widget: "text" }
