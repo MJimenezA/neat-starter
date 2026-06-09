@@ -1,46 +1,58 @@
----
 header:
-  image: /static/img/placeholders/explore.svg
+  image: /static/img/chatgpt-image-jun-1-2026-06_28_10-pm.png
   title_en: Explore Mérida
   title_es: Explora la Ciudad Blanca
-  subtitle_en: The White City is full of color, history, and flavor — here are our favorite things to do and see.
-  subtitle_es: La Ciudad Blanca está llena de color, historia y sabor — estas son nuestras cosas favoritas para hacer y ver.
-
+  subtitle_en: The White City is full of color, history, and flavor — here are our
+    favorite things to do and see.
+  subtitle_es: La Ciudad Blanca está llena de color, historia y sabor — estas son
+    nuestras cosas favoritas para hacer y ver.
 sights:
   heading_en: Must-See Sights
   heading_es: Imperdibles
   list:
-    - image: /static/img/placeholders/sight-plaza.svg
+    - image: /static/img/chatgpt-image-jun-1-2026-06_35_52-pm.png
       name_en: Plaza Grande (Zócalo)
       name_es: Plaza Grande (Zócalo)
-      desc_en: The main square at the heart of the city, framed by the Cathedral, the Governor's Palace, and open-air cafés. Perfect for an evening stroll.
-      desc_es: La plaza principal en el corazón de la ciudad, enmarcada por la Catedral, el Palacio de Gobierno y cafés al aire libre. Perfecta para un paseo nocturno.
-    - image: /static/img/placeholders/sight-montejo.svg
+      desc_en: The main square at the heart of the city, framed by the Cathedral, the
+        Governor's Palace, and open-air cafés. Perfect for an evening stroll.
+      desc_es: La plaza principal en el corazón de la ciudad, enmarcada por la
+        Catedral, el Palacio de Gobierno y cafés al aire libre. Perfecta para un
+        paseo nocturno.
+    - image: /static/img/chatgpt-image-jun-1-2026-06_28_10-pm.png
       name_en: Paseo de Montejo
       name_es: Paseo de Montejo
-      desc_en: A grand Haussmann-inspired boulevard lined with 19th-century mansions, now home to museums, galleries, and restaurants.
-      desc_es: Un gran bulevar de inspiración haussmanniana bordeado de mansiones del siglo XIX, hoy hogar de museos, galerías y restaurantes.
+      desc_en: A grand Haussmann-inspired boulevard lined with 19th-century mansions,
+        now home to museums, galleries, and restaurants.
+      desc_es: Un gran bulevar de inspiración haussmanniana bordeado de mansiones del
+        siglo XIX, hoy hogar de museos, galerías y restaurantes.
     - image: /static/img/placeholders/sight-museo.svg
       name_en: Gran Museo del Mundo Maya
       name_es: Gran Museo del Mundo Maya
-      desc_en: A world-class museum dedicated to Mayan civilization. Stunning building, fascinating exhibits.
-      desc_es: Un museo de clase mundial dedicado a la civilización maya. Edificio impresionante, exhibiciones fascinantes.
+      desc_en: A world-class museum dedicated to Mayan civilization. Stunning
+        building, fascinating exhibits.
+      desc_es: Un museo de clase mundial dedicado a la civilización maya. Edificio
+        impresionante, exhibiciones fascinantes.
     - image: /static/img/placeholders/sight-mercado.svg
       name_en: Mercado Lucas de Gálvez
       name_es: Mercado Lucas de Gálvez
-      desc_en: The central market — a sensory explosion of produce, spices, crafts, and local food stalls.
-      desc_es: El mercado central — una explosión sensorial de productos, especias, artesanías y puestos de comida local.
+      desc_en: The central market — a sensory explosion of produce, spices, crafts,
+        and local food stalls.
+      desc_es: El mercado central — una explosión sensorial de productos, especias,
+        artesanías y puestos de comida local.
     - image: /static/img/placeholders/sight-catedral.svg
       name_en: Catedral de San Ildefonso
       name_es: Catedral de San Ildefonso
-      desc_en: One of the oldest cathedrals in the Americas, dating to 1598. A striking landmark on Plaza Grande.
-      desc_es: Una de las catedrales más antiguas de América, de 1598. Un punto de referencia imponente en la Plaza Grande.
+      desc_en: One of the oldest cathedrals in the Americas, dating to 1598. A
+        striking landmark on Plaza Grande.
+      desc_es: Una de las catedrales más antiguas de América, de 1598. Un punto de
+        referencia imponente en la Plaza Grande.
     - image: /static/img/placeholders/sight-canton.svg
       name_en: Palacio Cantón (MACAY)
       name_es: Palacio Cantón (MACAY)
-      desc_en: The Regional Anthropology Museum, housed in a stunning Beaux-Arts mansion on Paseo de Montejo.
-      desc_es: El Museo Regional de Antropología, en una impresionante mansión Beaux-Arts en el Paseo de Montejo.
-
+      desc_en: The Regional Anthropology Museum, housed in a stunning Beaux-Arts
+        mansion on Paseo de Montejo.
+      desc_es: El Museo Regional de Antropología, en una impresionante mansión
+        Beaux-Arts en el Paseo de Montejo.
 daytrips:
   heading_en: Day Trips & Nature
   heading_es: Excursiones y Naturaleza
@@ -48,74 +60,102 @@ daytrips:
     - image: /static/img/placeholders/trip-cenote.svg
       name_en: Cenotes
       name_es: Cenotes
-      desc_en: "Mérida is surrounded by hundreds of cenotes — natural sinkholes with crystal-clear water. Closest clusters: Cuzamá, Homún, Dzemul (~1–1.5 hrs away)."
-      desc_es: "Mérida está rodeada de cientos de cenotes — pozos naturales de agua cristalina. Los más cercanos: Cuzamá, Homún, Dzemul (~1–1.5 hrs)."
+      desc_en: "Mérida is surrounded by hundreds of cenotes — natural sinkholes with
+        crystal-clear water. Closest clusters: Cuzamá, Homún, Dzemul (~1–1.5 hrs
+        away)."
+      desc_es: "Mérida está rodeada de cientos de cenotes — pozos naturales de agua
+        cristalina. Los más cercanos: Cuzamá, Homún, Dzemul (~1–1.5 hrs)."
     - image: /static/img/placeholders/trip-uxmal.svg
       name_en: Uxmal
       name_es: Uxmal
-      desc_en: Stunning Mayan ruins about an hour south of Mérida. Less crowded than Chichén Itzá and architecturally breathtaking.
-      desc_es: Impresionantes ruinas mayas a una hora al sur de Mérida. Menos concurridas que Chichén Itzá y arquitectónicamente asombrosas.
+      desc_en: Stunning Mayan ruins about an hour south of Mérida. Less crowded than
+        Chichén Itzá and architecturally breathtaking.
+      desc_es: Impresionantes ruinas mayas a una hora al sur de Mérida. Menos
+        concurridas que Chichén Itzá y arquitectónicamente asombrosas.
     - image: /static/img/placeholders/trip-chichen.svg
       name_en: Chichén Itzá
       name_es: Chichén Itzá
-      desc_en: The iconic pyramid, about two hours east. Go early to beat the heat and crowds — best as a morning trip.
-      desc_es: La icónica pirámide, a unas dos horas al este. Ve temprano para evitar el calor y las multitudes — mejor por la mañana.
+      desc_en: The iconic pyramid, about two hours east. Go early to beat the heat and
+        crowds — best as a morning trip.
+      desc_es: La icónica pirámide, a unas dos horas al este. Ve temprano para evitar
+        el calor y las multitudes — mejor por la mañana.
     - image: /static/img/placeholders/trip-progreso.svg
       name_en: Progreso Beach
       name_es: Playa Progreso
-      desc_en: A 30-minute drive north to the Gulf of Mexico — a great afternoon beach escape.
-      desc_es: A 30 minutes al norte, en el Golfo de México — un gran escape de playa por la tarde.
+      desc_en: A 30-minute drive north to the Gulf of Mexico — a great afternoon beach
+        escape.
+      desc_es: A 30 minutes al norte, en el Golfo de México — un gran escape de playa
+        por la tarde.
     - image: /static/img/placeholders/trip-izamal.svg
       name_en: Izamal
       name_es: Izamal
-      desc_en: The "Yellow City," a magical colonial town painted entirely in ochre yellow. An easy half-day trip.
-      desc_es: La "Ciudad Amarilla", un mágico pueblo colonial pintado por completo de amarillo ocre. Una fácil excursión de medio día.
-
+      desc_en: The "Yellow City," a magical colonial town painted entirely in ochre
+        yellow. An easy half-day trip.
+      desc_es: La "Ciudad Amarilla", un mágico pueblo colonial pintado por completo de
+        amarillo ocre. Una fácil excursión de medio día.
 food:
   heading_en: Food & Drink
   heading_es: Comida y Bebida
-  intro_en: Yucatecan cuisine is unlike anything else in Mexico — you'll find flavors you can't find anywhere else.
-  intro_es: La cocina yucateca es diferente a todo lo demás en México — encontrarás sabores que no hay en ningún otro lugar.
+  intro_en: Yucatecan cuisine is unlike anything else in Mexico — you'll find
+    flavors you can't find anywhere else.
+  intro_es: La cocina yucateca es diferente a todo lo demás en México —
+    encontrarás sabores que no hay en ningún otro lugar.
   image: /static/img/placeholders/food.svg
   blocks:
     - title_en: What to Eat
       title_es: Qué Comer
-      body_en: Cochinita pibil, sopa de lima, huevos motuleños, panuchos, papadzules, and marquesitas (crispy crepes with Edam cheese).
-      body_es: Cochinita pibil, sopa de lima, huevos motuleños, panuchos, papadzules y marquesitas (crepas crujientes con queso de bola).
+      body_en: Cochinita pibil, sopa de lima, huevos motuleños, panuchos, papadzules,
+        and marquesitas (crispy crepes with Edam cheese).
+      body_es: Cochinita pibil, sopa de lima, huevos motuleños, panuchos, papadzules y
+        marquesitas (crepas crujientes con queso de bola).
     - title_en: Where to Eat in Centro
       title_es: Dónde Comer en el Centro
-      body_en: Apoala, Oliva Eats, La Negrita Cantina, and the restaurant at Rosas & Xocolate.
-      body_es: Apoala, Oliva Eats, La Negrita Cantina y el restaurante de Rosas & Xocolate.
+      body_en: Apoala, Oliva Eats, La Negrita Cantina, and the restaurant at Rosas &
+        Xocolate.
+      body_es: Apoala, Oliva Eats, La Negrita Cantina y el restaurante de Rosas &
+        Xocolate.
     - title_en: Mezcal & Cocktails
       title_es: Mezcal y Cócteles
-      body_en: Mérida has a growing cocktail scene — try Ku'uk or any rooftop bar on Paseo de Montejo for craft drinks.
-      body_es: Mérida tiene una creciente escena de coctelería — prueba Ku'uk o cualquier bar en azotea del Paseo de Montejo.
+      body_en: Mérida has a growing cocktail scene — try Ku'uk or any rooftop bar on
+        Paseo de Montejo for craft drinks.
+      body_es: Mérida tiene una creciente escena de coctelería — prueba Ku'uk o
+        cualquier bar en azotea del Paseo de Montejo.
     - title_en: Coffee
       title_es: Café
       body_en: Café Chocolate, La Negrita, and many third-wave spots throughout Centro.
-      body_es: Café Chocolate, La Negrita y muchos cafés de tercera ola en todo el Centro.
-
+      body_es: Café Chocolate, La Negrita y muchos cafés de tercera ola en todo el
+        Centro.
 tips:
   heading_en: Practical Tips
   heading_es: Consejos Prácticos
   list:
     - title_en: Weather in March
       title_es: Clima en Marzo
-      body_en: Warm and sunny, ~85°F / 29°C by day, comfortable evenings. Low humidity compared to summer.
-      body_es: Cálido y soleado, ~29°C de día, noches agradables. Baja humedad en comparación con el verano.
+      body_en: Warm and sunny, ~85°F / 29°C by day, comfortable evenings. Low humidity
+        compared to summer.
+      body_es: Cálido y soleado, ~29°C de día, noches agradables. Baja humedad en
+        comparación con el verano.
     - title_en: Getting Around
       title_es: Cómo Moverse
-      body_en: Uber works well throughout Mérida. Taxis are plentiful. Car rental recommended only for day trips.
-      body_es: Uber funciona bien en toda Mérida. Hay muchos taxis. Se recomienda rentar auto solo para excursiones.
+      body_en: Uber works well throughout Mérida. Taxis are plentiful. Car rental
+        recommended only for day trips.
+      body_es: Uber funciona bien en toda Mérida. Hay muchos taxis. Se recomienda
+        rentar auto solo para excursiones.
     - title_en: Currency
       title_es: Moneda
-      body_en: Mexican Pesos (MXN). USD is accepted in many tourist areas, but keep pesos for markets and smaller spots.
-      body_es: Pesos Mexicanos (MXN). Se acepta USD en zonas turísticas, pero ten pesos para mercados y lugares pequeños.
+      body_en: Mexican Pesos (MXN). USD is accepted in many tourist areas, but keep
+        pesos for markets and smaller spots.
+      body_es: Pesos Mexicanos (MXN). Se acepta USD en zonas turísticas, pero ten
+        pesos para mercados y lugares pequeños.
     - title_en: Language
       title_es: Idioma
-      body_en: Spanish is primary; English is spoken in most tourist-facing businesses. A few words of Spanish go a long way.
-      body_es: El español es el idioma principal; se habla inglés en la mayoría de los negocios turísticos. Unas palabras en español ayudan mucho.
+      body_en: Spanish is primary; English is spoken in most tourist-facing
+        businesses. A few words of Spanish go a long way.
+      body_es: El español es el idioma principal; se habla inglés en la mayoría de los
+        negocios turísticos. Unas palabras en español ayudan mucho.
     - title_en: Safety
       title_es: Seguridad
-      body_en: Mérida is consistently ranked one of the safest cities in Mexico. Normal urban precautions apply.
-      body_es: Mérida es constantemente clasificada como una de las ciudades más seguras de México. Aplica precauciones urbanas normales.
+      body_en: Mérida is consistently ranked one of the safest cities in Mexico.
+        Normal urban precautions apply.
+      body_es: Mérida es constantemente clasificada como una de las ciudades más
+        seguras de México. Aplica precauciones urbanas normales.
