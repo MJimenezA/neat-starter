@@ -47,7 +47,7 @@ events_intro:
   blurb_es: Tenemos tres celebraciones planeadas durante el fin de semana — cada
     una, una oportunidad para reunirnos, celebrar y disfrutar Mérida juntos.
 travel_teaser:
-  image: /static/img/placeholders/travel.svg
+  image: /static/img/chatgpt-image-jun-1-2026-06_28_10-pm.png
   heading_en: Getting Here
   heading_es: Cómo Llegar
   blurb_en: Mérida is easily accessible from major U.S. cities with direct or
@@ -76,7 +76,7 @@ stay_teaser:
     - /static/img/placeholders/casa-santian.svg
     - /static/img/placeholders/mansion-xodo.svg
 explore_teaser:
-  image: /static/img/placeholders/explore.svg
+  image: /static/img/chatgpt-image-jun-1-2026-06_29_45-pm.png
   heading_en: Discover Mérida
   heading_es: Explora Mérida
   blurb_en: The White City is full of wonder — cenotes, Mayan ruins, colorful
