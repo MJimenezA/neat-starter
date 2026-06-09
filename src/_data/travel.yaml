@@ -1,94 +1,117 @@
----
 header:
-  image: /static/img/placeholders/travel.svg
+  image: /static/img/chatgpt-image-jun-1-2026-06_28_10-pm.png
   title_en: Travel & Stay
   title_es: Viaje y Hospedaje
   subtitle_en: Everything you need to plan your trip to Mérida
   subtitle_es: Todo lo que necesitas para planear tu viaje a Mérida
-
 getting_here:
   heading_en: Getting to Mérida
   heading_es: Cómo Llegar a Mérida
   points:
     - en: "Nearest airport: Mérida International Airport (MID)."
       es: "Aeropuerto más cercano: Aeropuerto Internacional de Mérida (MID)."
-    - en: "Direct and connecting flights from major U.S. hubs: New York (JFK/EWR), Miami (MIA), Houston (IAH), Dallas (DFW)."
-      es: "Vuelos directos y con escala desde los principales aeropuertos de EE. UU.: Nueva York (JFK/EWR), Miami (MIA), Houston (IAH), Dallas (DFW)."
+    - en: "Direct and connecting flights from major U.S. hubs: New York (JFK/EWR),
+        Miami (MIA), Houston (IAH), Dallas (DFW)."
+      es: "Vuelos directos y con escala desde los principales aeropuertos de EE. UU.:
+        Nueva York (JFK/EWR), Miami (MIA), Houston (IAH), Dallas (DFW)."
     - en: "Approx. flight times: ~3.5 hrs from Miami, ~4.5 hrs from NYC."
       es: "Tiempos de vuelo aprox.: ~3.5 hrs desde Miami, ~4.5 hrs desde Nueva York."
-    - en: "Ground transport from airport: taxi, Uber, or hotel shuttle (~20–30 min to Centro)."
-      es: "Transporte desde el aeropuerto: taxi, Uber o transporte del hotel (~20–30 min al Centro)."
-    - en: "Renting a car isn't necessary for city stays, but is useful for day trips."
-      es: "Rentar un auto no es necesario para la ciudad, pero es útil para excursiones."
-
+    - en: "Ground transport from airport: taxi, Uber, or hotel shuttle (~20–30 min to
+        Centro)."
+      es: "Transporte desde el aeropuerto: taxi, Uber o transporte del hotel (~20–30
+        min al Centro)."
+    - en: Renting a car isn't necessary for city stays, but is useful for day trips.
+      es: Rentar un auto no es necesario para la ciudad, pero es útil para
+        excursiones.
 when_to_arrive:
   heading_en: When to Arrive
   heading_es: Cuándo Llegar
-  body_en: We recommend arriving Thursday, March 4 or Friday, March 5 to settle in and join us for the Welcome Dinner. Consider departing Sunday, March 7 or later if you'd like to explore more of Mérida and the Yucatán peninsula.
-  body_es: Recomendamos llegar el jueves 4 o el viernes 5 de marzo para instalarte y acompañarnos a la Cena de Bienvenida. Considera partir el domingo 7 de marzo o después si deseas explorar más de Mérida y la península de Yucatán.
-
+  body_en: We recommend arriving Thursday, March 4 or Friday, March 5 to settle in
+    and join us for the Welcome Dinner. Consider departing Sunday, March 7 or
+    later if you'd like to explore more of Mérida and the Yucatán peninsula.
+  body_es: Recomendamos llegar el jueves 4 o el viernes 5 de marzo para instalarte
+    y acompañarnos a la Cena de Bienvenida. Considera partir el domingo 7 de
+    marzo o después si deseas explorar más de Mérida y la península de Yucatán.
 areas:
   heading_en: Recommended Areas to Stay
   heading_es: Zonas Recomendadas para Hospedarse
   list:
-    - image: /static/img/placeholders/area-centro.svg
+    - image: /static/img/chatgpt-image-jun-1-2026-06_35_52-pm.png
       name_en: Centro Histórico
       name_es: Centro Histórico
-      desc_en: The heart of Mérida — walkable, vibrant, full of colonial architecture, restaurants, and markets. Perfect if you want to be in the middle of everything.
-      desc_es: El corazón de Mérida — caminable, vibrante, lleno de arquitectura colonial, restaurantes y mercados. Perfecto si quieres estar en medio de todo.
-      distance_en: "~15 min by car to the venue"
-      distance_es: "~15 min en auto al lugar"
-    - image: /static/img/placeholders/area-montejo.svg
+      desc_en: The heart of Mérida — walkable, vibrant, full of colonial architecture,
+        restaurants, and markets. Perfect if you want to be in the middle of
+        everything.
+      desc_es: El corazón de Mérida — caminable, vibrante, lleno de arquitectura
+        colonial, restaurantes y mercados. Perfecto si quieres estar en medio de
+        todo.
+      distance_en: ~15 min by car to the venue
+      distance_es: ~15 min en auto al lugar
+    - image: /static/img/chatgpt-image-jun-1-2026-06_28_10-pm.png
       name_en: Paseo de Montejo
       name_es: Paseo de Montejo
-      desc_en: Mérida's grand boulevard, lined with mansions, galleries, and upscale restaurants. A beautiful, calm area with easy access to the city's highlights.
-      desc_es: El gran bulevar de Mérida, bordeado de mansiones, galerías y restaurantes de alta categoría. Una zona hermosa y tranquila con fácil acceso a lo mejor de la ciudad.
-      distance_en: "~12 min by car to the venue"
-      distance_es: "~12 min en auto al lugar"
+      desc_en: Mérida's grand boulevard, lined with mansions, galleries, and upscale
+        restaurants. A beautiful, calm area with easy access to the city's
+        highlights.
+      desc_es: El gran bulevar de Mérida, bordeado de mansiones, galerías y
+        restaurantes de alta categoría. Una zona hermosa y tranquila con fácil
+        acceso a lo mejor de la ciudad.
+      distance_en: ~12 min by car to the venue
+      distance_es: ~12 min en auto al lugar
     - image: /static/img/placeholders/area-north.svg
       name_en: North Mérida / Altabrisa
       name_es: Norte de Mérida / Altabrisa
-      desc_en: A modern, safe residential area with shopping, great restaurants, and proximity to the venue. A good option for families or newer accommodations.
-      desc_es: Una zona residencial moderna y segura con centros comerciales, excelentes restaurantes y cercanía al lugar. Buena opción para familias o alojamientos más nuevos.
-      distance_en: "~10 min by car to the venue"
-      distance_es: "~10 min en auto al lugar"
-
+      desc_en: A modern, safe residential area with shopping, great restaurants, and
+        proximity to the venue. A good option for families or newer
+        accommodations.
+      desc_es: Una zona residencial moderna y segura con centros comerciales,
+        excelentes restaurantes y cercanía al lugar. Buena opción para familias
+        o alojamientos más nuevos.
+      distance_en: ~10 min by car to the venue
+      distance_es: ~10 min en auto al lugar
 hotels:
   heading_en: Hotel Room Blocks
   heading_es: Bloques de Habitaciones
-  intro_en: We've reserved room blocks for wedding guests. Use the group code when booking.
-  intro_es: Hemos reservado bloques de habitaciones para los invitados. Usa el código de grupo al reservar.
+  intro_en: We've reserved room blocks for wedding guests. Use the group code when
+    booking.
+  intro_es: Hemos reservado bloques de habitaciones para los invitados. Usa el
+    código de grupo al reservar.
   list:
-    - image: /static/img/placeholders/hotel-courtyard.svg
-      name_en: Courtyard by Marriott Mérida
+    - area_es: Norte de Mérida
       name_es: Courtyard by Marriott Mérida
-      area_en: North Mérida
-      area_es: Norte de Mérida
       notes_en: Room block reserved for wedding guests. Use group code TBD when booking.
-      notes_es: Bloque de habitaciones reservado para invitados. Usa el código de grupo TBD al reservar.
+      notes_es: Bloque de habitaciones reservado para invitados. Usa el código de
+        grupo TBD al reservar.
+      url: "#"
       amenities_en: Pool · Restaurant · Fitness center · Modern rooms
+      button_en: Book Your Room
       amenities_es: Alberca · Restaurante · Gimnasio · Habitaciones modernas
-      button_en: Book Your Room
       button_es: Reserva tu Habitación
-      url: "#"
-    - image: /static/img/placeholders/hotel-gamma.svg
-      name_en: Gamma Mérida El Castellano
+      image: https://www.marriott.com/en-us/hotels/midcy-courtyard-merida-downtown/overview/
+      area_en: North Mérida
+      name_en: Courtyard by Marriott Mérida
+    - area_es: Centro Histórico
       name_es: Gamma Mérida El Castellano
-      area_en: Centro Histórico
-      area_es: Centro Histórico
       notes_en: Room block reserved for wedding guests. Use group code TBD.
-      notes_es: Bloque de habitaciones reservado para invitados. Usa el código de grupo TBD.
-      amenities_en: Central location · Rooftop pool · Colonial charm
-      amenities_es: Ubicación céntrica · Alberca en azotea · Encanto colonial
-      button_en: Book Your Room
-      button_es: Reserva tu Habitación
+      notes_es: Bloque de habitaciones reservado para invitados. Usa el código de
+        grupo TBD.
       url: "#"
-
+      amenities_en: Central location · Rooftop pool · Colonial charm
+      button_en: Book Your Room
+      amenities_es: Ubicación céntrica · Alberca en azotea · Encanto colonial
+      button_es: Reserva tu Habitación
+      image: https://gammaelcastellano.meridanhotel.com/en/
+      area_en: Centro Histórico
+      name_en: Gamma Mérida El Castellano
 boutique:
   heading_en: Boutique & Airbnb Options
   heading_es: Opciones Boutique y Airbnb
-  intro_en: For guests who prefer a more intimate or locally-flavored stay, Mérida has an excellent selection of boutique hotels and Airbnb casas in restored colonial homes.
-  intro_es: Para los invitados que prefieren una estancia más íntima y con sabor local, Mérida tiene una excelente selección de hoteles boutique y casas Airbnb en hogares coloniales restaurados.
+  intro_en: For guests who prefer a more intimate or locally-flavored stay, Mérida
+    has an excellent selection of boutique hotels and Airbnb casas in restored
+    colonial homes.
+  intro_es: Para los invitados que prefieren una estancia más íntima y con sabor
+    local, Mérida tiene una excelente selección de hoteles boutique y casas
+    Airbnb en hogares coloniales restaurados.
   list:
     - image: /static/img/placeholders/casa-santian.svg
       name_en: Casa Santian
@@ -109,17 +132,23 @@ boutique:
       desc_es: Busca rentas de casas coloniales — ideal para grupos.
       url: "#"
   tip_en: Book early — Mérida fills up, especially in March for Carnival season.
-  tip_es: Reserva con anticipación — Mérida se llena, sobre todo en marzo por la temporada de Carnaval.
-
+  tip_es: Reserva con anticipación — Mérida se llena, sobre todo en marzo por la
+    temporada de Carnaval.
 transport:
   heading_en: Getting Around & Travel Tips
   heading_es: Transporte y Consejos de Viaje
   tips:
-    - en: "Uber works well throughout Mérida; taxis are plentiful. A car is handy only for day trips."
-      es: "Uber funciona bien en toda Mérida; hay muchos taxis. Un auto solo es útil para excursiones."
-    - en: "Currency is Mexican Pesos (MXN). Carry pesos for markets and smaller spots."
-      es: "La moneda es el Peso Mexicano (MXN). Lleva pesos para mercados y lugares pequeños."
-    - en: "Weather in March is warm and sunny, ~85°F / 29°C by day, comfortable evenings."
-      es: "El clima en marzo es cálido y soleado, ~29°C de día, noches agradables."
-    - en: "Mérida is consistently ranked one of the safest cities in Mexico — normal precautions apply."
-      es: "Mérida es constantemente clasificada como una de las ciudades más seguras de México — toma precauciones normales."
+    - en: Uber works well throughout Mérida; taxis are plentiful. A car is handy only
+        for day trips.
+      es: Uber funciona bien en toda Mérida; hay muchos taxis. Un auto solo es útil
+        para excursiones.
+    - en: Currency is Mexican Pesos (MXN). Carry pesos for markets and smaller spots.
+      es: La moneda es el Peso Mexicano (MXN). Lleva pesos para mercados y lugares
+        pequeños.
+    - en: Weather in March is warm and sunny, ~85°F / 29°C by day, comfortable
+        evenings.
+      es: El clima en marzo es cálido y soleado, ~29°C de día, noches agradables.
+    - en: Mérida is consistently ranked one of the safest cities in Mexico — normal
+        precautions apply.
+      es: Mérida es constantemente clasificada como una de las ciudades más seguras de
+        México — toma precauciones normales.
