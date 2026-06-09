@@ -82,12 +82,12 @@ hotels:
       notes_en: Room block reserved for wedding guests. Use group code TBD when booking.
       notes_es: Bloque de habitaciones reservado para invitados. Usa el código de
         grupo TBD al reservar.
-      url: "#"
+      url: https://www.marriott.com/en-us/hotels/midcy-courtyard-merida-downtown/overview/
       amenities_en: Pool · Restaurant · Fitness center · Modern rooms
       button_en: Book Your Room
       amenities_es: Alberca · Restaurante · Gimnasio · Habitaciones modernas
       button_es: Reserva tu Habitación
-      image: https://www.marriott.com/en-us/hotels/midcy-courtyard-merida-downtown/overview/
+      image: https://cache.marriott.com/content/dam/marriott-renditions/MIDCY/midcy-exterior-8843-hor-pano.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1920px:*
       area_en: North Mérida
       name_en: Courtyard by Marriott Mérida
     - area_es: Centro Histórico
@@ -95,12 +95,12 @@ hotels:
       notes_en: Room block reserved for wedding guests. Use group code TBD.
       notes_es: Bloque de habitaciones reservado para invitados. Usa el código de
         grupo TBD.
-      url: "#"
+      url: https://www.fiestamericanatravelty.com/en/gamma-hoteles/hotels/gamma-merida-el-castellano
       amenities_en: Central location · Rooftop pool · Colonial charm
       button_en: Book Your Room
       amenities_es: Ubicación céntrica · Alberca en azotea · Encanto colonial
       button_es: Reserva tu Habitación
-      image: https://gammaelcastellano.meridanhotel.com/en/
+      image: https://gammaelcastellano.meridanhotel.com/data/Photos/OriginalPhoto/17194/1719406/1719406843.JPEG
       area_en: Centro Histórico
       name_en: Gamma Mérida El Castellano
 boutique:
