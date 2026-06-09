@@ -1,76 +1,103 @@
----
-intro_en: Three gatherings, one joyful weekend. Below you'll find the full schedule — RSVP to each celebration you plan to attend.
-intro_es: Tres reuniones, un fin de semana lleno de alegría. A continuación encontrarás el itinerario completo — confirma tu asistencia a cada celebración a la que planeas asistir.
-
+intro_en: Three gatherings, one joyful weekend. Below you'll find the full
+  schedule — RSVP to each celebration you plan to attend.
+intro_es: Tres reuniones, un fin de semana lleno de alegría. A continuación
+  encontrarás el itinerario completo — confirma tu asistencia a cada celebración
+  a la que planeas asistir.
 list:
-  - id: welcome
-    image: /static/img/placeholders/welcome-dinner.svg
-    name_en: Welcome Dinner
-    name_es: Cena de Bienvenida
-    date_en: Friday, March 5, 2027 · Time TBD
-    date_es: Viernes, 5 de Marzo, 2027 · Hora a confirmar
+  - name_es: Cena de Bienvenida
+    long_en: We can't wait to see you. The night before the wedding, we'll gather
+      for a relaxed dinner under the stars — a chance to reconnect, share a
+      meal, and toast to the weekend ahead. Dress is smart-casual and the mood
+      is warm and unhurried.
+    short_en: Start the celebration with an intimate welcome dinner for family and
+      close friends the evening before the wedding.
+    long_es: No podemos esperar a verte. La noche anterior a la boda nos reuniremos
+      para una cena relajada bajo las estrellas — una oportunidad para
+      reencontrarnos, compartir una comida y brindar por el fin de semana que
+      comienza. Vestimenta casual elegante y un ambiente cálido y sin prisas.
+    short_es: Comienza la celebración con una íntima cena de bienvenida para la
+      familia y amigos cercanos la noche anterior a la boda.
     location_en: Venue to be announced
-    location_es: Lugar por anunciar
-    short_en: Start the celebration with an intimate welcome dinner for family and close friends the evening before the wedding.
-    short_es: Comienza la celebración con una íntima cena de bienvenida para la familia y amigos cercanos la noche anterior a la boda.
-    long_en: We can't wait to see you. The night before the wedding, we'll gather for a relaxed dinner under the stars — a chance to reconnect, share a meal, and toast to the weekend ahead. Dress is smart-casual and the mood is warm and unhurried.
-    long_es: No podemos esperar a verte. La noche anterior a la boda nos reuniremos para una cena relajada bajo las estrellas — una oportunidad para reencontrarnos, compartir una comida y brindar por el fin de semana que comienza. Vestimenta casual elegante y un ambiente cálido y sin prisas.
-    rsvp_anchor: rsvp-welcome
     rsvp_label_en: RSVP to Welcome Dinner
-    rsvp_label_es: Confirmar a la Cena
-
-  - id: wedding
-    image: /static/img/placeholders/wedding.svg
-    name_en: The Wedding · Ceremony & Reception
-    name_es: La Boda · Ceremonia y Recepción
-    date_en: Saturday, March 6, 2027 · Ceremony at time TBD
-    date_es: Sábado, 6 de Marzo, 2027 · Ceremonia a confirmar
-    location_en: Hacienda Chichí Suárez, Mérida, Yucatán
-    location_es: Hacienda Chichí Suárez, Mérida, Yucatán
-    short_en: Our ceremony and reception in the beautiful grounds of Hacienda Chichí Suárez — an evening of love, dancing, and celebration under the Yucatán sky.
-    short_es: Nuestra ceremonia y recepción en los hermosos jardines de la Hacienda Chichí Suárez — una noche de amor, baile y celebración bajo el cielo yucateco.
-    long_en: The heart of the weekend. We'll exchange vows in the hacienda gardens as the afternoon softens into evening, followed by cocktails, dinner, and dancing late into the Yucatán night. Garden formal attire. Full schedule to be shared closer to the date.
-    long_es: El corazón del fin de semana. Intercambiaremos votos en los jardines de la hacienda mientras la tarde se transforma en noche, seguido de cócteles, cena y baile hasta entrada la noche yucateca. Vestimenta formal de jardín. El itinerario completo se compartirá cerca de la fecha.
-    rsvp_anchor: rsvp-wedding
-    rsvp_label_en: RSVP to Wedding
-    rsvp_label_es: Confirmar a la Boda
-
-  - id: sendoff
-    image: /static/img/placeholders/sendoff.svg
-    name_en: Send-Off Brunch
-    name_es: Despedida · Brunch
-    date_en: Sunday, March 7, 2027 · Time TBD
-    date_es: Domingo, 7 de Marzo, 2027 · Hora a confirmar
-    location_en: Venue to be announced
     location_es: Lugar por anunciar
-    short_en: One last morning together — a casual farewell gathering before we all head our separate ways.
-    short_es: Una última mañana juntos — una despedida casual antes de que cada quien tome su camino.
-    long_en: Before we say goodbye, join us for a slow, sunny brunch. Come as you are, fill a plate, and share one more cup of coffee with the people who made the weekend so special.
-    long_es: Antes de despedirnos, acompáñanos a un brunch tranquilo y soleado. Ven como estés, sírvete un plato y comparte una última taza de café con las personas que hicieron este fin de semana tan especial.
-    rsvp_anchor: rsvp-sendoff
+    rsvp_anchor: rsvp-welcome
+    date_en: Friday, March 5, 2027 · Time TBD
+    id: welcome
+    image: /static/img/teya.jpg
+    rsvp_label_es: Confirmar a la Cena
+    name_en: Welcome Dinner
+    date_es: Viernes, 5 de Marzo, 2027 · Hora a confirmar
+  - name_es: La Boda · Ceremonia y Recepción
+    long_en: The heart of the weekend. We'll exchange vows in the hacienda gardens
+      as the afternoon softens into evening, followed by cocktails, dinner, and
+      dancing late into the Yucatán night. Garden formal attire. Full schedule
+      to be shared closer to the date.
+    short_en: Our ceremony and reception in the beautiful grounds of Hacienda Chichí
+      Suárez — an evening of love, dancing, and celebration under the Yucatán
+      sky.
+    long_es: El corazón del fin de semana. Intercambiaremos votos en los jardines de
+      la hacienda mientras la tarde se transforma en noche, seguido de cócteles,
+      cena y baile hasta entrada la noche yucateca. Vestimenta formal de jardín.
+      El itinerario completo se compartirá cerca de la fecha.
+    short_es: Nuestra ceremonia y recepción en los hermosos jardines de la Hacienda
+      Chichí Suárez — una noche de amor, baile y celebración bajo el cielo
+      yucateco.
+    location_en: Hacienda Chichí Suárez, Mérida, Yucatán
+    rsvp_label_en: RSVP to Wedding
+    location_es: Hacienda Chichí Suárez, Mérida, Yucatán
+    rsvp_anchor: rsvp-wedding
+    date_en: Saturday, March 6, 2027 · Ceremony at time TBD
+    id: wedding
+    image: /static/img/2b9afb99-f6a8-4b0e-9fe9-3034bb923ff3.png
+    rsvp_label_es: Confirmar a la Boda
+    name_en: The Wedding · Ceremony & Reception
+    date_es: Sábado, 6 de Marzo, 2027 · Ceremonia a confirmar
+  - name_es: Despedida · Brunch
+    long_en: Before we say goodbye, join us for a slow, sunny brunch. Come as you
+      are, fill a plate, and share one more cup of coffee with the people who
+      made the weekend so special.
+    short_en: One last morning together — a casual farewell gathering before we all
+      head our separate ways.
+    long_es: Antes de despedirnos, acompáñanos a un brunch tranquilo y soleado. Ven
+      como estés, sírvete un plato y comparte una última taza de café con las
+      personas que hicieron este fin de semana tan especial.
+    short_es: Una última mañana juntos — una despedida casual antes de que cada
+      quien tome su camino.
+    location_en: Venue to be announced
     rsvp_label_en: RSVP to Send-Off
+    location_es: Lugar por anunciar
+    rsvp_anchor: rsvp-sendoff
+    date_en: Sunday, March 7, 2027 · Time TBD
+    id: sendoff
+    image: /static/img/placeholders/sendoff.svg
     rsvp_label_es: Confirmar a la Despedida
-
-# Detailed wedding-day schedule blocks for the Events page
+    name_en: Send-Off Brunch
+    date_es: Domingo, 7 de Marzo, 2027 · Hora a confirmar
 schedule:
   - image: /static/img/placeholders/ceremony.svg
     time_en: Late Afternoon
     time_es: Media Tarde
     title_en: Ceremony
     title_es: Ceremonia
-    body_en: Guests are seated in the hacienda gardens as Misael and Michelle exchange vows beneath the trees.
-    body_es: Los invitados toman asiento en los jardines de la hacienda mientras Misael y Michelle intercambian votos bajo los árboles.
+    body_en: Guests are seated in the hacienda gardens as Misael and Michelle
+      exchange vows beneath the trees.
+    body_es: Los invitados toman asiento en los jardines de la hacienda mientras
+      Misael y Michelle intercambian votos bajo los árboles.
   - image: /static/img/placeholders/cocktail.svg
     time_en: Golden Hour
     time_es: Hora Dorada
     title_en: Cocktail Hour
     title_es: Hora del Cóctel
-    body_en: Mezcal, mixology, and Yucatecan bites on the terrace while the light turns gold.
-    body_es: Mezcal, coctelería y bocadillos yucatecos en la terraza mientras la luz se vuelve dorada.
+    body_en: Mezcal, mixology, and Yucatecan bites on the terrace while the light
+      turns gold.
+    body_es: Mezcal, coctelería y bocadillos yucatecos en la terraza mientras la luz
+      se vuelve dorada.
   - image: /static/img/placeholders/reception.svg
     time_en: Evening
     time_es: Noche
     title_en: Reception
     title_es: Recepción
-    body_en: Dinner, heartfelt toasts, and dancing under string lights and the open Yucatán sky.
-    body_es: Cena, brindis emotivos y baile bajo luces colgantes y el cielo abierto de Yucatán.
+    body_en: Dinner, heartfelt toasts, and dancing under string lights and the open
+      Yucatán sky.
+    body_es: Cena, brindis emotivos y baile bajo luces colgantes y el cielo abierto
+      de Yucatán.
